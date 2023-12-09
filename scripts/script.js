@@ -105,7 +105,7 @@ function redirect() {
 
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
-      window.open("/pages/shop.html", "blank_");
+      window.open("pages/shop.html", "blank_");
     });
   });
 }
