@@ -98,7 +98,7 @@ function redirect(input, location) {
 
 const logo = document.getElementById("logo-js");
 
-redirect(logo, "/index.html");
+redirect(logo, "./index.html");
 
 setUserInfo();
 
