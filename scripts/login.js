@@ -39,7 +39,7 @@ function redirect(input, location) {
   });
 }
 
-redirect(loginImg, "/index.html");
+redirect(loginImg, "./index.html");
 
 function toggleVisibility() {
   toggleButton.addEventListener("click", () => {
