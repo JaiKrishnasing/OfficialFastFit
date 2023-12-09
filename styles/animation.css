@@ -1,0 +1,146 @@
+@keyframes buttonIn {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translate(-1.3vw, 1.9vh);
+  }
+}
+
+@keyframes buttonOut {
+  0% {
+    transform: translate(-1.3vw, 1.9vh);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes hamburgerIn {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes hamburgerOut {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes buttonInForm {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translate(-1.8vw, 2vh);
+  }
+}
+
+@keyframes buttonOutForm {
+  0% {
+    transform: translate(-1.8vw, 2vh);
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes line {
+  0% {
+    transform: translate(0) scale(0);
+    transform-origin: left;
+    left: 33.3%;
+    right: auto;
+  }
+  100% {
+    width: 200px;
+  }
+}
+
+@keyframes buttonInRecommend {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translate(-1.8vw, 2vh);
+  }
+}
+
+@keyframes buttonOutRecommend {
+  0% {
+    transform: translate(-1.8vw, 2vh);
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes buttonInAbout {
+  0% {
+    transform: translate(0%);
+  }
+
+  100% {
+    transform: translate(-4vw, 3.4vh);
+  }
+}
+
+@keyframes buttonOutAbout {
+  0% {
+    transform: translate(-4vw, 3.4vh);
+  }
+
+  100% {
+    transform: translate(0%);
+  }
+}
+
+@keyframes buttonInPricing {
+  0% {
+    transform: translate(0%);
+  }
+
+  100% {
+    transform: translate(-80px, 20px);
+  }
+}
+
+@keyframes buttonOutPricing {
+  0% {
+    transform: translate(-80px, 20px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes toggleIn {
+  0% {
+    transform: translateY(30px);
+  }
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>FastFit - Over</title>
+    <link rel="icon" href="/icons/logo icon.png" type="image/png" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="/styles/about.css" />
+    <link rel="stylesheet" href="/styles/animation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inclusive+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inclusive+Sans&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="hamburger-menu-container" id="hamburger-menu-container-js">
+      <div class="content" id="content-js">
+        <div>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACAUlEQVR4nO2avUoDURCFD1roQgoRxVrQB1DQFJYKRtCXMD6E8QWSWBhLY6+NFvoCxkL7IGIKK0EQLCKKjTF6JLDFEpLs3L0/uy4ZmC5zTiZ8u3cyu8AwhuEuCNQIcEC+Echa8M362oO8ayqC9RCxTj4SyBhsIuNrhvnWVUQXCbQEolWDjRwL/NoEllWFSwLhTm4ZaCJH4FfgVYwiPkbgXiD+SmBGo4lpAi8CnwaBcZ2Lry0wudRo5Fyg/0NgJaqHKmL5CNo7Qu2iVhOKiH0SmFfQnSXwYRUpDcRuCYwK9EYIXDtBSgOxgkBrzxlSGoh9E1gaoLNA4MspUhqIPRDw+vwYd7Eg1R0EykIsKj1qD4W1JdgOBcQ6J/VGoG5NeHo3rCGlgdgzgUkCEwSeEoGUBmKnfko+W4brUEBMmu6Q0kAseUhpIBbvXcoBYvEhZRCx+JEyhFj8SHUHgf0Ijbi/3aYeLZq52L3/ihQThRjTcCDSzojiJRmpk8QOjUzDGE+1P1a5QN2q/0WTgRjlSB30qK0kAjGmYflAOVItg+sgL86hcFegVYhlqKQcqZvErkyptsSeU1xivztDjHKktiNo550gRjlSFxoeZ1YRo7tHb1MKj948m0htRm0i4LUuXKeWbCF1pNtEwLNqHLE0vTBQCxFrWnyFoxnifWXadxjDQP/4A7Gb6LvtoO+EAAAAAElFTkSuQmCC"
+            class="close-button"
+            id="close-button-js"
+          />
+        </div>
+        <div class="hamburger-container-text">
+          <a class="hamburger-links" href="/index.html">Home</a>
+          <a class="hamburger-links" href="shop.html">Shop</a>
+          <a class="hamburger-links" href="BMI.html">Prijzen</a>
+          <a class="hamburger-links" href="courses.html">Cursussen</a>
+        </div>
+      </div>
+    </div>
+    <div class="landing-page-container">
+      <div class="landing-page-header-content">
+        <div>
+          <img
+            src="/logo/logo.png"
+            class="landing-page-header-logo"
+            id="landing-page-header-logo-js"
+          />
+        </div>
+        <nav id="nav-js">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="BMI.html">Prijzen</a></li>
+            <li><a href="courses.html">Cursussen</a></li>
+          </ul>
+        </nav>
+        <div>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA9ElEQVR4nO2SMWpCQRiEv9hY2RiwUTu1sPcKdum8imnNIbyEPKyiEEIuYWMj6SwV1HSmmLAwBgm+F8UVmzcwzTD/zO7+CzliQFATJIKdORY0Y4avBfrDoFVjFCQOfA2B5sTaKEbBzmG/pxXUrW1iFGwdVrtVwdhhE+8jcGotiVHQEqxSlty4uiDAix35ubZefJzwHKkQFAQdwYvgQzAXfJlzawN7CpcEFwXPguWJn5PG4O2H2f/CK4LZ0eCnYCh4ErQFJbNtbWjPwR9mK1kF7zaGJ+ieeeMHQU+w8OxblvnbpvI54ccQPHp2n2VSDHK3ghycwA9Tdgg9Jiu7DAAAAABJRU5ErkJggg=="
+            class="icon" id="icon-js"
+          />
+        </div>
+        <div>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAUklEQVR4nO3WwQkAMAzDQI3ezd0xAkIH+jf0Y0iSXBg8QwxmiOsHdAjiH3mGSJIkNON3va1mHo0zhOmQZ4gkSUIzftfbaubROEOYDnmGSJJw4AMYm2x/criEYgAAAABJRU5ErkJggg=="
+            class="hamburger-icon"
+            id="hamburger-icon-js"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-red-600 relative w-[100%] h-[600px] sm:h-[300px] justify-center flex text-center object-cover"
+    >
+      <div class="whitespace-nowrap">
+        <div>
+          <p
+            class="text-white text-[100px] font-cartoon absolute left-40 top-20 sm:top-32 count-up"
+            data-count="10"
+          ></p>
+        </div>
+        <div>
+          <p
+            class="font text-white text-[16px] absolute top-52 left-14 sm:top-[260px]"
+          >
+            Jaar met trots actief in de gemeenschap!
+          </p>
+        </div>
+      </div>
+      <div class="whitespace-nowrap">
+        <div>
+          <p
+            class="text-white text-[100px] font-cartoon absolute left-32 top-[220px] count-up sm:left-[49%] sm:top-32"
+            data-count="1000"
+          ></p>
+        </div>
+        <div>
+          <p
+            class="font text-white text-[16px] absolute top-[360px] left-10 sm:top-[260px] sm:left-[45%]"
+          >
+            leden sterk en welkom bij onze fitnessfamilie!
+          </p>
+        </div>
+      </div>
+      <div class="text-center">
+        <div>
+          <p
+            class="text-white text-[100px] font-cartoon absolute left-40 top-[380px] count-up sm:top-32 sm:left-[85%]"
+            data-count="50"
+          ></p>
+        </div>
+        <div>
+          <p
+            class="font text-white text-[16px] absolute top-[512px] left-14 w-[300px] sm:top-[250px] sm:left-[79%]"
+          >
+            lessen variërend van cardio tot yoga om je fitnessroutine te
+            verrijken!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="relative h-[750px] sm:h-[700px] about-container ">
+      <div
+        class="absolute left-0 top-0 h-[100%] w-[100%] sm:w-[50%] sm:h-[100%]"
+      >
+        <div>
+          <p
+            class="text-white absolute font-cartoon text-4xl top-[44px] left-40 z-10 sm:left-[400px] whitespace-nowrap"
+          >
+            Over Ons
+          </p>
+          <img
+            src="/images/header text.png"
+            class="absolute w-[350px] top-[-40px] left-10 sm:left-72"
+          />
+        </div>
+        <div>
+          <h1
+            class="font-sans font-bold text-5xl w-[500px] absolute top-32 left-14 sm:left-[300px]"
+          >
+            Ontdek FastFit
+          </h1>
+        </div>
+        <div>
+          <p
+            class="text-gray-600 absolute left-6 top-52 font w-[350px] text-center font-bold sm:left-32 sm:w-[700px]"
+          >
+            Welkom bij FastFit - uw one-stop-bestemming voor hoogwaardige
+            fitnessproducten en inspirerende cursussen. Ontdek topkwaliteit
+            uitrusting in onze webshop en schrijf uw in voor dynamische
+            cursussen onder leiding van ervaren instructeurs. FastFit is uw
+            partner op weg naar een gezonder, sterker leven. Waar wacht uw nog
+            op? Begin vandaag!
+          </p>
+        </div>
+        <div>
+          <div class="flex absolute bg-white top-[475px] left-36 h-[50px] w-[250px] border-2 border-solid border-[red] sm:top-80 sm:left-[420px]" id="button-animation-js"></div>
+          <div>
+            <button
+              class="absolute top-[500px] left-20 p-3 bg-[red] text-white font font-bold px-[50px] text-xl buttonCourse sm:left-80 sm:top-[350px] whitespace-nowrap"
+            >
+              Neem Contact Op &#x2192
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class=" absolute bottom-0 sm:w-[50%] sm:h-[100%] sm:right-0"
+      >
+      <div>
+        <img src="/images/About-img.png" class="absolute bottom-0 w-[100%] h-[700px] -right-20 bg-cover object-cover img-scale">
+      </div>
+    </div>
+    </div>
+    <div class="bg-[#121212] relative flex h-[2600px] sm:h-[1000px] w-[100%] justify-center items-center">
+      <div class="grid-cols-1 sm:grid-cols-3 grid absolute top-16 sm:border-4   sm:border-red-500">
+        <div class="bg-white h-96 w-96 sm:order-1">
+          <div>
+            <img src="data:image/png;base64,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" class="w-[50px] h-[50px] ml-[10%] top-4 relative ">
+            <p class="font-cartoon relative text-5xl left-24 -top-9">Geschiedenis</p>
+          </div>
+          <div>
+            <p class="text-gray-500 relative -top-4 w-[320px] text-center text-xl left-10">
+              Begonnen in 2013, is FastFit ontstaan uit de visie van Jai Krishnasing. Wat begon als een bescheiden fitnessgemeenschap is nu uitgegroeid tot een bloeiende hub voor gezondheid en welzijn. Onze reis is gevuld met toewijding aan onze leden en het streven naar een gezondere gemeenschap
+            </p>
+          </div>
+        </div>
+        <div class="h-96 w-96 items-center overflow-hidden sm:order-2">
+          <img src="/images/about-img-1.jpeg" class="w-[100%] h-[100%]">
+        </div>
+        <div class="bg-white h-96 w-96 sm:order-3">
+          <div>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABlklEQVR4nO2XTUrEQBCFa6GC7ied97oXrrONG8eLuBJB8AJ6hXH8OYwu9AKKbucAulAcnRsIgqA09GAGnEzQxKlof1CQhHS6Xr90UyUS+eMkSWJI7gO4APAI4CWEvz4nuWeMSUQrAFYAnAB4JfleFv4dAMd+jGii0+mkAAYh0TeSpyQ3jTGrzrllH/7aPyN5Ft7xggbeQdFAnueLAG5CYrcA8llj0jRdA3AXxlyLyILMGwC7wYl755ytOs5a60g+BDE7Mm9IXvlkrLVb3xi7HRbh8seJZFm2RPIIwPOsTaotADyR7HsNflUO551QDXEgQZW/WZeWQbI7dkbGqqSlcJx/FKIERkeUweiIMhgdUQajI8pgdEQZjI78F0eyko5zoqPTLoTVOs6DxoSQ7Nbx4bKOc6Kjq2euja+E1BrTJm9sPn7ejFooZNTYHin8Wt1pvwKAYRs2e7/CSvbacvz2C84Uj9+hF9GK4/e3YRSiDEZHlMHoiDIYHVEGoyNaHUFJtaodFKvpitWq9uiVVqvaAw1U0xGpiQ/Cg5a1bR5fhAAAAABJRU5ErkJggg==" class="w-[50px] h-[50px] ml-[20%] top-4 relative ">
+            <p class="font-cartoon relative text-5xl left-36 -top-9">Ons team</p>
+          </div>
+          <div>
+            <p class="text-gray-500 relative -top-4 w-[350px] text-center text-xl left-4">
+              - Jai Krishnasing, Chief Executive Officer <br>
+              - Isabella Vos, Chief Financial Officer <br>
+              - Will Smith, Chief Marketing Officer <br>
+              - Thierry Smit, Chief Operating Officer <br>
+              - Milan Koster, Head of Courses <br>
+              - Jesse Kuijpers, Head of website <br>
+            </p>
+          </div>
+        </div>
+        <div class="h-96 w-96 items-center overflow-hidden order-4">
+          <img src="/images/about-img-2.avif" class="w-[100%] h-[100%]">
+        </div>
+        <div class="bg-white h-96 w-96 order-5">
+          <div>
+            <img src="data:image/png;base64,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" class="w-[50px] h-[50px] ml-[25%] top-4 relative ">
+            <p class="font-cartoon relative text-5xl left-40 -top-9">Missie</p>
+          </div>
+          <div>
+            <p class="text-gray-500 relative -top-4 w-[350px] text-center text-xl left-4">
+              Onze missie is om een gezonde fitnessgemeenschap te creëren, waar leden worden aangemoedigd om hun persoonlijke grenzen te verleggen en een actieve, evenwichtige levensstijl te omarmen.
+            </p>
+          </div>
+        </div>
+        <div class="h-96 w-96 items-center overflow-hidden order-6">
+          <img src="/images/about-img-3.jpg" class="w-[100%] h-[100%]">
+        </div>
+      </div>
+    </div>
+    <div class="relative flex bg-red-500 w-[100%] h-[800px] justify-center items-center">
+      <div class="bg-white absolute w-[80%] h-[650px] rounded-md text-center" id="target">
+        <div>
+          <h2 class="text-black font absolute font-semibold text-3xl sm:text-4xl top-5 left-8 sm:left-[39%] whitespace-nowrap">Contact Opnemen</h2>
+        </div>
+        <div>
+          <hr
+            class="absolute left-9 top-20 w-64 border-[3px] border-red-600 border-solid sm:left-[40%]"
+          />
+        </div>
+        <form>
+          <div>
+            <input type="text" id="fname-js" name="fname" placeholder="Voer uw naam in*" maxlength="15" autocomplete="on" class="border-2 border-solid border-gray-300 rounded-sm absolute left-8 top-28 pr-16 pl-3 pt-3 pb-3 input font sm:top-[20%] sm:left-[10%] sm:pr-[300px]">
+          </div>
+          <div>
+            <input type="text" id="email-js" name="email" placeholder="Voer uw email adres in*" autocomplete="on" class="border-2 border-solid border-gray-300 rounded-sm absolute left-8 top-48 pr-16 pl-3 pt-3 pb-3 input sm:top-[30%] sm:left-[10%] sm:pr-[300px] resize-none">
+          </div>
+          <div>
+            <select class="border-2 border-solid border-gray-300 rounded-sm absolute left-8 top-[272px] pr-16 pl-3 pt-3 pb-3 input sm:top-[40%] sm:left-[10%] sm:pr-[360px]">
+              <option disabled selected value="">Kies cursus</option>
+              <option>Workout</option>
+              <option>Yoga</option>
+              <option>Kettlebell</option>
+              <option>MMA</option>
+              <option>Kickboxing</option>
+              <option>Training</option>
+            </select>
+          </div>
+          <div >
+            <textarea id="comment-js" maxlength="200" name="comment" placeholder="Voer uw commentaar (max. 200 tekens)" class="border-2 border-solid border-gray-300 rounded-sm absolute left-8 top-[352px] pr-16 pl-3 pt-3 pb-32 input sm:top-[50%] sm:left-[10%] sm:pr-80 resize-none"></textarea>
+          </div>
+          <div>
+            <input type="submit" id="submit-js" value="VERZEND" class="bg-[red] text-white font text-2xl  cursor-pointer rounded-sm absolute left-20 top-[570px] px-10 font-bold py-3 input sm:top-[85%] sm:left-[20%]">
+          </div>
+        </form>
+        <div class="img-container-about-contact">
+          <img src="/images/about-img-4.jpg" class="absolute right-[0] h-[100%] w-[500px]">
+        </div>
+      </div>
+    </div>
+    <footer
+    class="flex relative bg-black w-[100%] h-[550px] sm:h-[200px] justify-center object-cover items-center"
+  >
+    <div class="flex absolute w-[100%] h-[90%]">
+      <div>
+        <img
+          src="/logo/logo.png"
+          class="absolute w-[150px] h-[150px] left-32 sm:left-10 sm:top-[-30px]"
+        />
+      </div>
+      <div>
+        <nav class="absolute top-36 left-44 sm:top-10 sm:left-[40%]">
+          <ul>
+            <li class="block mt-0 sm:inline-block">
+              <a href="/index.html">Home</a>
+            </li>
+            <li class="block mt-4 sm:inline-block">
+              <a href="shop.html">Shop</a>
+            </li>
+            <li class="block mt-4 sm:inline-block">
+              <a href="BMI.html">Prijzen</a>
+            </li>
+            <li class="block mt-4 sm:inline-block"><a href="courses.html">Cursussen</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p
+            class="text-white font absolute left-16 top-[490px] sm:top-36 sm:left-[43vw]"
+          >
+            &#169; FastFit B.V.
+ | Alle Rechten
+            Voorbehouden
+          </p>
+        </div>
+      </div>
+      <div
+        class="w-[250px] h-[50px] justify-center items-center absolute top-[320px] left-20 sm:left-[80%] sm:top-10"
+      >
+      <a href="https://twitter.com/home" target="_blank" class="pointer-events-auto">
+        <button class="rounded-[50%] blue h-[50px] w-[50px] cursor-pointer">
+          <img src="/icons/twitter (1).png" class="h-[100%] w-[100 %]" />
+        </button>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" class="pointer-events-auto">
+        <button
+          class="rounded-[50%] pink h-[50px] w-[50px] ml-12 cursor-pointer"
+        >
+          <img src="/icons/instagram-logo.png" class="h-[100%] w-[100 %]" />
+        </button>
+      </a>
+      <a href="https://www.facebook.com" target="_blank" class="pointer-events-auto">
+        <button class="rounded-[50%] h-[50px] w-[50px] ml-10 cursor-pointer">
+          <img src="/icons/facebook.png" class="h-[100%] w-[100 %]" />
+        </button>
+      </a>
+      </div>
+      <div>
+        <p
+          class="absolute font top-[400px] text-center text-white left-16 text-sm sm:left-12 sm:top-28 sm:text-xs sm:text-left"
+        >
+          Bedrijfsnaam: FastFit B.V. <br />
+          E-mail: FastFit@nlservices.nl <br />
+          Telefoonnummer: +31 6 12345678 <br />
+          Adres: 123 Keizersgracht, Amsterdam, Nederland
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+    <script src="/scripts/hamburgerMenu.js"></script>
+    <script src="/scripts/about.js" type="module"></script>
+  </body>
+</html>

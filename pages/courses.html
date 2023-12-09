@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>FastFit - Cursussen</title>
+    <link rel="icon" href="/icons/logo icon.png" type="image/png" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="/styles/courses.css" />
+    <link rel="stylesheet" href="/styles/animation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inclusive+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inclusive+Sans&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="hamburger-menu-container" id="hamburger-menu-container-js">
+      <div class="content" id="content-js">
+        <div>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACAUlEQVR4nO2avUoDURCFD1roQgoRxVrQB1DQFJYKRtCXMD6E8QWSWBhLY6+NFvoCxkL7IGIKK0EQLCKKjTF6JLDFEpLs3L0/uy4ZmC5zTiZ8u3cyu8AwhuEuCNQIcEC+Echa8M362oO8ayqC9RCxTj4SyBhsIuNrhvnWVUQXCbQEolWDjRwL/NoEllWFSwLhTm4ZaCJH4FfgVYwiPkbgXiD+SmBGo4lpAi8CnwaBcZ2Lry0wudRo5Fyg/0NgJaqHKmL5CNo7Qu2iVhOKiH0SmFfQnSXwYRUpDcRuCYwK9EYIXDtBSgOxgkBrzxlSGoh9E1gaoLNA4MspUhqIPRDw+vwYd7Eg1R0EykIsKj1qD4W1JdgOBcQ6J/VGoG5NeHo3rCGlgdgzgUkCEwSeEoGUBmKnfko+W4brUEBMmu6Q0kAseUhpIBbvXcoBYvEhZRCx+JEyhFj8SHUHgf0Ijbi/3aYeLZq52L3/ihQThRjTcCDSzojiJRmpk8QOjUzDGE+1P1a5QN2q/0WTgRjlSB30qK0kAjGmYflAOVItg+sgL86hcFegVYhlqKQcqZvErkyptsSeU1xivztDjHKktiNo550gRjlSFxoeZ1YRo7tHb1MKj948m0htRm0i4LUuXKeWbCF1pNtEwLNqHLE0vTBQCxFrWnyFoxnifWXadxjDQP/4A7Gb6LvtoO+EAAAAAElFTkSuQmCC"
+            class="close-button"
+            id="close-button-js"
+          />
+        </div>
+        <div class="hamburger-container-text">
+          <a class="hamburger-links" href="/index.html">Home</a>
+          <a class="hamburger-links" href="shop.html">Shop</a>
+          <a class="hamburger-links" href="BMI.html">Prijzen</a>
+          <a class="hamburger-links" href="about.html">Over</a>
+        </div>
+      </div>
+    </div>
+    <div class="landing-page-container">
+      <div class="landing-page-header-content">
+        <div>
+          <img
+            src="/logo/logo.png"
+            class="landing-page-header-logo"
+            id="landing-page-header-logo-js"
+          />
+        </div>
+        <nav id="nav-js">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="BMI.html">Prijzen</a></li>
+            <li><a href="about.html">Over</a></li>
+          </ul>
+        </nav>
+        <div>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA9ElEQVR4nO2SMWpCQRiEv9hY2RiwUTu1sPcKdum8imnNIbyEPKyiEEIuYWMj6SwV1HSmmLAwBgm+F8UVmzcwzTD/zO7+CzliQFATJIKdORY0Y4avBfrDoFVjFCQOfA2B5sTaKEbBzmG/pxXUrW1iFGwdVrtVwdhhE+8jcGotiVHQEqxSlty4uiDAix35ubZefJzwHKkQFAQdwYvgQzAXfJlzawN7CpcEFwXPguWJn5PG4O2H2f/CK4LZ0eCnYCh4ErQFJbNtbWjPwR9mK1kF7zaGJ+ieeeMHQU+w8OxblvnbpvI54ccQPHp2n2VSDHK3ghycwA9Tdgg9Jiu7DAAAAABJRU5ErkJggg=="
+            class="icon"
+            id="icon-js"
+          />
+        </div>
+        <div>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAUklEQVR4nO3WwQkAMAzDQI3ezd0xAkIH+jf0Y0iSXBg8QwxmiOsHdAjiH3mGSJIkNON3va1mHo0zhOmQZ4gkSUIzftfbaubROEOYDnmGSJJw4AMYm2x/criEYgAAAABJRU5ErkJggg=="
+            class="hamburger-icon"
+            id="hamburger-icon-js"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex justify-center object-center items-center w-[100%] h-[3200px] sm:h-[1200px] bg-cover bg-no-repeat course-container"
+    >
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 absolute top-[150px]">
+        <div class="w-[350px] h-[450px] overflow-hidden relative rounded-xl">
+          <div class="h-[100%] w-[100%]">
+            <img
+              src="/images/workout 2.jpg"
+              alt="workout Image"
+              class="w-[100%] h-[100%] bg-cover invert-[0.2]"
+            />
+          </div>
+          <div>
+            <p
+              class="absolute top-[240px] left-5 font font-bold text-5xl text-white"
+            >
+              Workout
+            </p>
+          </div>
+          <div>
+            <hr
+              class="absolute top-[280px] left-2 w-28 border-[3px] border-red-600 border-solid m-[20px]"
+            />
+          </div>
+          <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADM0lEQVR4nO2ZS2xMURjHzwyq1dDSiDTCgnqTSkjakFhIBOnOAiG1KJsiSCMRVhqJruqx8IpELKXUIzYoiUcitZB4pkEtpIg01COI90++9Ju4qXTmnLn3To+YfzKrOd9/fmfuved7XGPyyuvfElABrAYagf3AHmAHsBAYbHwWMAioAx6QXp3AAuOjgHLgZgD2BdAC7AUa9CNX5pF+/xk4AMwzvggoDQA+BmqARD9rk0Bznyt0AhiWe/K/4Y4r0G2gxGK9bGY6sAXo1tjTuaHtH2o88AP4DlRmET8B6NHNLImH0g5kvUK0hvDYmbrFzEAJOKMQa0N4TFOPp9HSuUG0K0R1yGP7C/BrwB564IluZGpIn/fqUxodnRtAhwJMCenzSX1GREfnBnBNAbLO1MAo9fgYLZ0bhCQz0coQHlXqcS9aOjcIKQRFTSE8tqrHoWjp3CAWK8SVEB7n1WNVtHRuEEsV4kM25TlQALxTj5p4KO1ArirEtv4KxQzxCWC7elyOh9Lt+K0M4VGpHg+jpXODOKkQdSE81qlHS7R0bhBrFOKZNE9ZxDdorKg2Hkr7OumU1klSZiQdYpOB0qRVvOKltYO6o0AzHGJmaUyH8UX09uOi3Q4xTRpz2PgiYI5CSbc32rK+eqMx841PAs4qmOSWsjTrhgMXdW2b8U3AWOBVpkZLehddIxl9ovFR9E5SMm1EJiiiTuOrgPsWG0n16F3GV/Gn9Z2ZYYQk6jY+ChgjXZ5CjkuzrkQT6FfZlPFJ9Ca3u7qJCxbrW1LJEJibG8o0kkwunR3wLTD7LbeIKwtM7WVSeQyYbXIpaaCAZdIV6i0i+qkzYOtxjuaToxqb0g1gOTAkzg0UAhsD1So6xjmS7uG28JVT7GDg+RI9BzYDRVFuIKEvcOSdR0pyW2wCRkb4OyXAhsCzJnqp/UoirHkxcC5g3J6LqTmwqM+LIyl/irM1GwpcV6PXwIrIiTMz1AZuOWEpyMZkXyoDA5NjIbU/2ruUpdk1eJK+vJETpSo2SnueamWRY77CJXCX/gOXjCcC2pSp0SXolgbVG08E1KcOHJegt/irHttNFOG/CkNc3Lzy+u/0G2OFKmFs1enpAAAAAElFTkSuQmCC"
+              class="w-[30px] h-[30px] absolute top-[320px] left-5"
+            />
+            <p
+              class="absolute top-[323px] left-[55px] text-white font font-bold text-lg"
+            >
+              Timo de Vries
+            </p>
+          </div>
+          <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD3ElEQVR4nO2a229NQRTGt9CeCqHVKo88SgX/BFp33hRvpF5Kg9eWN+LyImni7yAIoiJxb90TVEmE6oM23txS8pNV3zBh95x9mXN6iC85OTtnZr5Za8+smXU5UfQf/yiAecAm4BhwFngGvAe+6GPPT9VmfTYCDVE1AKgDdgAXgW+kx1fgArAdKEyFAjOB/cCIJ9RnoA/o1sossTcO1OjToN+srQe4ojEOb4F99nIqpcRa4KUnQD+wE5ibgase2AUMeHwvgLZyb6NT3oR3gVUB+VuB+x5/b/DVARZKcMMHoBOYnnDsbeBmwr7Tgb3AR2+1F+RWQOSLtdzo1FmacvwEUo5ZBgxq6JDJkFrw3wjne4R3gKYMHKkVMehwuKbhZpMLoxw24bbTDWBWRp5MihhsTuCWt83S24xn2Lad5qUmCKCIAWj0dkVvlOGIdYadyiZCK+LZjDsAWqMUl527JzoTDSqzIgagyzP+0lsMOODdE4mO2AopMgN4ILquUp0LchUMK/NOHlIRA7BGdCNFV0XO28QJEQVCYEWmeSdpe7GOl9RpZ4iJQytiADpEeT4qEk98lUea2gGsoCINim/GY+UENmvOy6EmLYciBuCqaNdHvwM4rsbuqPoVOSTao3GNFoIaNvwFimwW7em4xudqXBJoMosKTzhFFKfXBOJuEeezuMYxNTYGmsxX4qcygbibxDca12gngaE20GSjMYq8C8RdEN/nSijyOkaR4UooMhZqaykgexWjyOG83Em2VhBjB5qBx+J6pZUx/+1IwNVuKWbs7vjdmHMlHnkBWbbwtASALcWOX3ch9gRYCftuzsIT4kK0DKChLxHbFKxEjIuybjJnzDmN9VEVroTn3DqncU4UByWUDbtiO8SP6a+UEgZgt+Y7F00GYJs6DUza6c8xN5W7rYQS04B7knFrqYtmWB1XR1UGYJ1ke1OyDKHUPtI8d/IhFPiRfHgo2fYkzTC6XO/eqErArxc8mLgoZPUJDbKk2LKyS1lanhXAJ8mUrpSh+oR7A0Fc+yzgxx1lSTnDySwEdd7ReitrEjsPgNmqr6DvQp63YdVZV1aYH1za4hffdc39InfBR4WeIW+bLQ8mbXGbGNKc5pUvCkW8wNtmH5VQnhGE/M8jdp9n2LeDX7SyGXcAoIRyW8Ab20oZ7p6YMOyy1t5VfXXLjnKxHVn+xSA72O25HW4rBasWJ1mdLs+dQR6pudcHlXdqUbWpVh97Xqqg6KD6ujyBczv2TNU/IMw3a7eEskKAtBhXZLp1ShSIgyWULRdrURtwRgHWmPenGnt+YuGp+qyfNJ74j+jvx3dwg7SM9u4o2QAAAABJRU5ErkJggg=="
+              class="w-[30px] h-[30px] absolute top-[323px] left-[180px]"
+            />
+            <p
+              class="absolute top-[323px] left-[220px] text-white font font-bold text-lg"
+            >
+              Ma: 9:00-10:00
+            </p>
+          </div>
+          <div>
+            <div
+              class="button-animation"
+              id="button-animation-js"
+              data-animation="1"
+            ></div>
+            <button
+              class="absolute top-[390px] left-5 p-3 bg-white font font-bold px-[70px] text-xl buttonCourse"
+              data-button="1"
+            >
+              Contact
+            </button>
+          </div>
+        </div>
+        <div class="w-[350px] h-[450px] overflow-hidden relative rounded-xl">
+          <div class="h-[100%] w-[100%]">
+            <img
+              src="/images/yoga.jpg"
+              alt="yoga Image"
+              class="w-[100%] h-[100%] bg-cover invert-[0.2]"
+            />
+          </div>
+          <div>
+            <p
+              class="absolute top-[240px] left-5 font font-bold text-5xl text-white"
+            >
+              Yoga
+            </p>
+          </div>
+          <div>
+            <hr
+              class="absolute top-[280px] left-2 w-28 border-[3px] border-red-600 border-solid m-[20px]"
+            />
+          </div>
+          <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADM0lEQVR4nO2ZS2xMURjHzwyq1dDSiDTCgnqTSkjakFhIBOnOAiG1KJsiSCMRVhqJruqx8IpELKXUIzYoiUcitZB4pkEtpIg01COI90++9Ju4qXTmnLn3To+YfzKrOd9/fmfuved7XGPyyuvfElABrAYagf3AHmAHsBAYbHwWMAioAx6QXp3AAuOjgHLgZgD2BdAC7AUa9CNX5pF+/xk4AMwzvggoDQA+BmqARD9rk0Bznyt0AhiWe/K/4Y4r0G2gxGK9bGY6sAXo1tjTuaHtH2o88AP4DlRmET8B6NHNLImH0g5kvUK0hvDYmbrFzEAJOKMQa0N4TFOPp9HSuUG0K0R1yGP7C/BrwB564IluZGpIn/fqUxodnRtAhwJMCenzSX1GREfnBnBNAbLO1MAo9fgYLZ0bhCQz0coQHlXqcS9aOjcIKQRFTSE8tqrHoWjp3CAWK8SVEB7n1WNVtHRuEEsV4kM25TlQALxTj5p4KO1ArirEtv4KxQzxCWC7elyOh9Lt+K0M4VGpHg+jpXODOKkQdSE81qlHS7R0bhBrFOKZNE9ZxDdorKg2Hkr7OumU1klSZiQdYpOB0qRVvOKltYO6o0AzHGJmaUyH8UX09uOi3Q4xTRpz2PgiYI5CSbc32rK+eqMx841PAs4qmOSWsjTrhgMXdW2b8U3AWOBVpkZLehddIxl9ovFR9E5SMm1EJiiiTuOrgPsWG0n16F3GV/Gn9Z2ZYYQk6jY+ChgjXZ5CjkuzrkQT6FfZlPFJ9Ca3u7qJCxbrW1LJEJibG8o0kkwunR3wLTD7LbeIKwtM7WVSeQyYbXIpaaCAZdIV6i0i+qkzYOtxjuaToxqb0g1gOTAkzg0UAhsD1So6xjmS7uG28JVT7GDg+RI9BzYDRVFuIKEvcOSdR0pyW2wCRkb4OyXAhsCzJnqp/UoirHkxcC5g3J6LqTmwqM+LIyl/irM1GwpcV6PXwIrIiTMz1AZuOWEpyMZkXyoDA5NjIbU/2ruUpdk1eJK+vJETpSo2SnueamWRY77CJXCX/gOXjCcC2pSp0SXolgbVG08E1KcOHJegt/irHttNFOG/CkNc3Lzy+u/0G2OFKmFs1enpAAAAAElFTkSuQmCC"
+              class="w-[30px] h-[30px] absolute top-[320px] left-5"
+            />
+            <p
+              class="absolute top-[323px] left-[55px] text-white font font-bold text-lg"
+            >
+              Noa Visser
+            </p>
+          </div>
+          <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD3ElEQVR4nO2a229NQRTGt9CeCqHVKo88SgX/BFp33hRvpF5Kg9eWN+LyImni7yAIoiJxb90TVEmE6oM23txS8pNV3zBh95x9mXN6iC85OTtnZr5Za8+smXU5UfQf/yiAecAm4BhwFngGvAe+6GPPT9VmfTYCDVE1AKgDdgAXgW+kx1fgArAdKEyFAjOB/cCIJ9RnoA/o1sossTcO1OjToN+srQe4ojEOb4F99nIqpcRa4KUnQD+wE5ibgase2AUMeHwvgLZyb6NT3oR3gVUB+VuB+x5/b/DVARZKcMMHoBOYnnDsbeBmwr7Tgb3AR2+1F+RWQOSLtdzo1FmacvwEUo5ZBgxq6JDJkFrw3wjne4R3gKYMHKkVMehwuKbhZpMLoxw24bbTDWBWRp5MihhsTuCWt83S24xn2Lad5qUmCKCIAWj0dkVvlOGIdYadyiZCK+LZjDsAWqMUl527JzoTDSqzIgagyzP+0lsMOODdE4mO2AopMgN4ILquUp0LchUMK/NOHlIRA7BGdCNFV0XO28QJEQVCYEWmeSdpe7GOl9RpZ4iJQytiADpEeT4qEk98lUea2gGsoCINim/GY+UENmvOy6EmLYciBuCqaNdHvwM4rsbuqPoVOSTao3GNFoIaNvwFimwW7em4xudqXBJoMosKTzhFFKfXBOJuEeezuMYxNTYGmsxX4qcygbibxDca12gngaE20GSjMYq8C8RdEN/nSijyOkaR4UooMhZqaykgexWjyOG83Em2VhBjB5qBx+J6pZUx/+1IwNVuKWbs7vjdmHMlHnkBWbbwtASALcWOX3ch9gRYCftuzsIT4kK0DKChLxHbFKxEjIuybjJnzDmN9VEVroTn3DqncU4UByWUDbtiO8SP6a+UEgZgt+Y7F00GYJs6DUza6c8xN5W7rYQS04B7knFrqYtmWB1XR1UGYJ1ke1OyDKHUPtI8d/IhFPiRfHgo2fYkzTC6XO/eqErArxc8mLgoZPUJDbKk2LKyS1lanhXAJ8mUrpSh+oR7A0Fc+yzgxx1lSTnDySwEdd7ReitrEjsPgNmqr6DvQp63YdVZV1aYH1za4hffdc39InfBR4WeIW+bLQ8mbXGbGNKc5pUvCkW8wNtmH5VQnhGE/M8jdp9n2LeDX7SyGXcAoIRyW8Ab20oZ7p6YMOyy1t5VfXXLjnKxHVn+xSA72O25HW4rBasWJ1mdLs+dQR6pudcHlXdqUbWpVh97Xqqg6KD6ujyBczv2TNU/IMw3a7eEskKAtBhXZLp1ShSIgyWULRdrURtwRgHWmPenGnt+YuGp+qyfNJ74j+jvx3dwg7SM9u4o2QAAAABJRU5ErkJggg=="
+              class="w-[30px] h-[30px] absolute top-[323px] left-[180px]"
+            />
+            <p
+              class="absolute top-[323px] left-[220px] text-white font font-bold text-lg"
+            >
+              Di: 10:30-11:30
+            </p>
+          </div>
+          <div>
+            <div
+              class="button-animation"
+              id="button-animation-js"
+              data-animation="2"
+            ></div>
+            <button
+              class="absolute top-[390px] left-5 p-3 bg-white font font-bold px-[70px] text-xl buttonCourse"
+              data-button="2"
+            >
+              Contact
+            </button>
+          </div>
+        </div>
+        <div class="w-[350px] h-[450px] overflow-hidden relative rounded-xl">
+          <div class="h-[100%] w-[100%]">
+            <img
+              src="/images/kettlebell workout.jpg"
+              alt="kettlebell Image"
+              class="w-[100%] h-[100%] bg-cover invert-[0.2]"
+            />
+          </div>
+          <div>
+            <p
+              class="absolute top-[240px] left-5 font font-bold text-5xl text-white"
+            >
+              Kettlebell
+            </p>
+          </div>
+          <div>
+            <hr
+              class="absolute top-[280px] left-2 w-28 border-[3px] border-red-600 border-solid m-[20px]"
+            />
+          </div>
+          <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADM0lEQVR4nO2ZS2xMURjHzwyq1dDSiDTCgnqTSkjakFhIBOnOAiG1KJsiSCMRVhqJruqx8IpELKXUIzYoiUcitZB4pkEtpIg01COI90++9Ju4qXTmnLn3To+YfzKrOd9/fmfuved7XGPyyuvfElABrAYagf3AHmAHsBAYbHwWMAioAx6QXp3AAuOjgHLgZgD2BdAC7AUa9CNX5pF+/xk4AMwzvggoDQA+BmqARD9rk0Bznyt0AhiWe/K/4Y4r0G2gxGK9bGY6sAXo1tjTuaHtH2o88AP4DlRmET8B6NHNLImH0g5kvUK0hvDYmbrFzEAJOKMQa0N4TFOPp9HSuUG0K0R1yGP7C/BrwB564IluZGpIn/fqUxodnRtAhwJMCenzSX1GREfnBnBNAbLO1MAo9fgYLZ0bhCQz0coQHlXqcS9aOjcIKQRFTSE8tqrHoWjp3CAWK8SVEB7n1WNVtHRuEEsV4kM25TlQALxTj5p4KO1ArirEtv4KxQzxCWC7elyOh9Lt+K0M4VGpHg+jpXODOKkQdSE81qlHS7R0bhBrFOKZNE9ZxDdorKg2Hkr7OumU1klSZiQdYpOB0qRVvOKltYO6o0AzHGJmaUyH8UX09uOi3Q4xTRpz2PgiYI5CSbc32rK+eqMx841PAs4qmOSWsjTrhgMXdW2b8U3AWOBVpkZLehddIxl9ovFR9E5SMm1EJiiiTuOrgPsWG0n16F3GV/Gn9Z2ZYYQk6jY+ChgjXZ5CjkuzrkQT6FfZlPFJ9Ca3u7qJCxbrW1LJEJibG8o0kkwunR3wLTD7LbeIKwtM7WVSeQyYbXIpaaCAZdIV6i0i+qkzYOtxjuaToxqb0g1gOTAkzg0UAhsD1So6xjmS7uG28JVT7GDg+RI9BzYDRVFuIKEvcOSdR0pyW2wCRkb4OyXAhsCzJnqp/UoirHkxcC5g3J6LqTmwqM+LIyl/irM1GwpcV6PXwIrIiTMz1AZuOWEpyMZkXyoDA5NjIbU/2ruUpdk1eJK+vJETpSo2SnueamWRY77CJXCX/gOXjCcC2pSp0SXolgbVG08E1KcOHJegt/irHttNFOG/CkNc3Lzy+u/0G2OFKmFs1enpAAAAAElFTkSuQmCC"
+              class="w-[30px] h-[30px] absolute top-[320px] left-5"
+            />
+            <p
+              class="absolute top-[323px] left-[55px] text-white font font-bold text-lg"
+            >
+              Femke Jacobs
+            </p>
+          </div>
+          <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD3ElEQVR4nO2a229NQRTGt9CeCqHVKo88SgX/BFp33hRvpF5Kg9eWN+LyImni7yAIoiJxb90TVEmE6oM23txS8pNV3zBh95x9mXN6iC85OTtnZr5Za8+smXU5UfQf/yiAecAm4BhwFngGvAe+6GPPT9VmfTYCDVE1AKgDdgAXgW+kx1fgArAdKEyFAjOB/cCIJ9RnoA/o1sossTcO1OjToN+srQe4ojEOb4F99nIqpcRa4KUnQD+wE5ibgase2AUMeHwvgLZyb6NT3oR3gVUB+VuB+x5/b/DVARZKcMMHoBOYnnDsbeBmwr7Tgb3AR2+1F+RWQOSLtdzo1FmacvwEUo5ZBgxq6JDJkFrw3wjne4R3gKYMHKkVMehwuKbhZpMLoxw24bbTDWBWRp5MihhsTuCWt83S24xn2Lad5qUmCKCIAWj0dkVvlOGIdYadyiZCK+LZjDsAWqMUl527JzoTDSqzIgagyzP+0lsMOODdE4mO2AopMgN4ILquUp0LchUMK/NOHlIRA7BGdCNFV0XO28QJEQVCYEWmeSdpe7GOl9RpZ4iJQytiADpEeT4qEk98lUea2gGsoCINim/GY+UENmvOy6EmLYciBuCqaNdHvwM4rsbuqPoVOSTao3GNFoIaNvwFimwW7em4xudqXBJoMosKTzhFFKfXBOJuEeezuMYxNTYGmsxX4qcygbibxDca12gngaE20GSjMYq8C8RdEN/nSijyOkaR4UooMhZqaykgexWjyOG83Em2VhBjB5qBx+J6pZUx/+1IwNVuKWbs7vjdmHMlHnkBWbbwtASALcWOX3ch9gRYCftuzsIT4kK0DKChLxHbFKxEjIuybjJnzDmN9VEVroTn3DqncU4UByWUDbtiO8SP6a+UEgZgt+Y7F00GYJs6DUza6c8xN5W7rYQS04B7knFrqYtmWB1XR1UGYJ1ke1OyDKHUPtI8d/IhFPiRfHgo2fYkzTC6XO/eqErArxc8mLgoZPUJDbKk2LKyS1lanhXAJ8mUrpSh+oR7A0Fc+yzgxx1lSTnDySwEdd7ReitrEjsPgNmqr6DvQp63YdVZV1aYH1za4hffdc39InfBR4WeIW+bLQ8mbXGbGNKc5pUvCkW8wNtmH5VQnhGE/M8jdp9n2LeDX7SyGXcAoIRyW8Ab20oZ7p6YMOyy1t5VfXXLjnKxHVn+xSA72O25HW4rBasWJ1mdLs+dQR6pudcHlXdqUbWpVh97Xqqg6KD6ujyBczv2TNU/IMw3a7eEskKAtBhXZLp1ShSIgyWULRdrURtwRgHWmPenGnt+YuGp+qyfNJ74j+jvx3dwg7SM9u4o2QAAAABJRU5ErkJggg=="
+              class="w-[30px] h-[30px] absolute top-[323px] left-[180px]"
+            />
+            <p
+              class="absolute top-[323px] left-[215px] text-white font font-bold text-lg whitespace-nowrap"
+            >
+              Wo: 13:00-14:00
+            </p>
+          </div>
+          <div>
+            <div
+              class="button-animation"
+              id="button-animation-js"
+              data-animation="3"
+            ></div>
+            <button
+              class="absolute top-[390px] left-5 p-3 bg-white font font-bold px-[70px] text-xl buttonCourse"
+              data-button="3"
+            >
+              Contact
+            </button>
+          </div>
+        </div>
+        <div class="w-[350px] h-[450px] overflow-hidden relative rounded-xl">
+          <div class="h-[100%] w-[100%]">
+            <img
+              src="/images/mma.jpg"
+              alt="MMA Image"
+              class="w-[100%] h-[100%] bg-cover invert-[0.2]"
+            />
+          </div>
+          <div>
+            <p
+              class="absolute top-[240px] left-5 font font-bold text-5xl text-white"
+            >
+              MMA
+            </p>
+          </div>
+          <div>
+            <hr
+              class="absolute top-[280px] left-2 w-28 border-[3px] border-red-600 border-solid m-[20px]"
+            />
+          </div>
+          <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADM0lEQVR4nO2ZS2xMURjHzwyq1dDSiDTCgnqTSkjakFhIBOnOAiG1KJsiSCMRVhqJruqx8IpELKXUIzYoiUcitZB4pkEtpIg01COI90++9Ju4qXTmnLn3To+YfzKrOd9/fmfuved7XGPyyuvfElABrAYagf3AHmAHsBAYbHwWMAioAx6QXp3AAuOjgHLgZgD2BdAC7AUa9CNX5pF+/xk4AMwzvggoDQA+BmqARD9rk0Bznyt0AhiWe/K/4Y4r0G2gxGK9bGY6sAXo1tjTuaHtH2o88AP4DlRmET8B6NHNLImH0g5kvUK0hvDYmbrFzEAJOKMQa0N4TFOPp9HSuUG0K0R1yGP7C/BrwB564IluZGpIn/fqUxodnRtAhwJMCenzSX1GREfnBnBNAbLO1MAo9fgYLZ0bhCQz0coQHlXqcS9aOjcIKQRFTSE8tqrHoWjp3CAWK8SVEB7n1WNVtHRuEEsV4kM25TlQALxTj5p4KO1ArirEtv4KxQzxCWC7elyOh9Lt+K0M4VGpHg+jpXODOKkQdSE81qlHS7R0bhBrFOKZNE9ZxDdorKg2Hkr7OumU1klSZiQdYpOB0qRVvOKltYO6o0AzHGJmaUyH8UX09uOi3Q4xTRpz2PgiYI5CSbc32rK+eqMx841PAs4qmOSWsjTrhgMXdW2b8U3AWOBVpkZLehddIxl9ovFR9E5SMm1EJiiiTuOrgPsWG0n16F3GV/Gn9Z2ZYYQk6jY+ChgjXZ5CjkuzrkQT6FfZlPFJ9Ca3u7qJCxbrW1LJEJibG8o0kkwunR3wLTD7LbeIKwtM7WVSeQyYbXIpaaCAZdIV6i0i+qkzYOtxjuaToxqb0g1gOTAkzg0UAhsD1So6xjmS7uG28JVT7GDg+RI9BzYDRVFuIKEvcOSdR0pyW2wCRkb4OyXAhsCzJnqp/UoirHkxcC5g3J6LqTmwqM+LIyl/irM1GwpcV6PXwIrIiTMz1AZuOWEpyMZkXyoDA5NjIbU/2ruUpdk1eJK+vJETpSo2SnueamWRY77CJXCX/gOXjCcC2pSp0SXolgbVG08E1KcOHJegt/irHttNFOG/CkNc3Lzy+u/0G2OFKmFs1enpAAAAAElFTkSuQmCC"
+              class="w-[30px] h-[30px] absolute top-[320px] left-5"
+            />
+            <p
+              class="absolute top-[323px] left-[55px] text-white font font-bold text-lg"
+            >
+              Thijs van Dijk
+            </p>
+          </div>
+          <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD3ElEQVR4nO2a229NQRTGt9CeCqHVKo88SgX/BFp33hRvpF5Kg9eWN+LyImni7yAIoiJxb90TVEmE6oM23txS8pNV3zBh95x9mXN6iC85OTtnZr5Za8+smXU5UfQf/yiAecAm4BhwFngGvAe+6GPPT9VmfTYCDVE1AKgDdgAXgW+kx1fgArAdKEyFAjOB/cCIJ9RnoA/o1sossTcO1OjToN+srQe4ojEOb4F99nIqpcRa4KUnQD+wE5ibgase2AUMeHwvgLZyb6NT3oR3gVUB+VuB+x5/b/DVARZKcMMHoBOYnnDsbeBmwr7Tgb3AR2+1F+RWQOSLtdzo1FmacvwEUo5ZBgxq6JDJkFrw3wjne4R3gKYMHKkVMehwuKbhZpMLoxw24bbTDWBWRp5MihhsTuCWt83S24xn2Lad5qUmCKCIAWj0dkVvlOGIdYadyiZCK+LZjDsAWqMUl527JzoTDSqzIgagyzP+0lsMOODdE4mO2AopMgN4ILquUp0LchUMK/NOHlIRA7BGdCNFV0XO28QJEQVCYEWmeSdpe7GOl9RpZ4iJQytiADpEeT4qEk98lUea2gGsoCINim/GY+UENmvOy6EmLYciBuCqaNdHvwM4rsbuqPoVOSTao3GNFoIaNvwFimwW7em4xudqXBJoMosKTzhFFKfXBOJuEeezuMYxNTYGmsxX4qcygbibxDca12gngaE20GSjMYq8C8RdEN/nSijyOkaR4UooMhZqaykgexWjyOG83Em2VhBjB5qBx+J6pZUx/+1IwNVuKWbs7vjdmHMlHnkBWbbwtASALcWOX3ch9gRYCftuzsIT4kK0DKChLxHbFKxEjIuybjJnzDmN9VEVroTn3DqncU4UByWUDbtiO8SP6a+UEgZgt+Y7F00GYJs6DUza6c8xN5W7rYQS04B7knFrqYtmWB1XR1UGYJ1ke1OyDKHUPtI8d/IhFPiRfHgo2fYkzTC6XO/eqErArxc8mLgoZPUJDbKk2LKyS1lanhXAJ8mUrpSh+oR7A0Fc+yzgxx1lSTnDySwEdd7ReitrEjsPgNmqr6DvQp63YdVZV1aYH1za4hffdc39InfBR4WeIW+bLQ8mbXGbGNKc5pUvCkW8wNtmH5VQnhGE/M8jdp9n2LeDX7SyGXcAoIRyW8Ab20oZ7p6YMOyy1t5VfXXLjnKxHVn+xSA72O25HW4rBasWJ1mdLs+dQR6pudcHlXdqUbWpVh97Xqqg6KD6ujyBczv2TNU/IMw3a7eEskKAtBhXZLp1ShSIgyWULRdrURtwRgHWmPenGnt+YuGp+qyfNJ74j+jvx3dwg7SM9u4o2QAAAABJRU5ErkJggg=="
+              class="w-[30px] h-[30px] absolute top-[323px] left-[180px]"
+            />
+            <p
+              class="absolute top-[323px] left-[220px] text-white font font-bold text-lg"
+            >
+              Do: 15:00-16:30
+            </p>
+          </div>
+          <div>
+            <div
+              class="button-animation"
+              id="button-animation-js"
+              data-animation="4"
+            ></div>
+            <button
+              class="absolute top-[390px] left-5 p-3 bg-white font font-bold px-[70px] text-xl buttonCourse"
+              data-button="4"
+            >
+              Contact
+            </button>
+          </div>
+        </div>
+        <div class="w-[350px] h-[450px] overflow-hidden relative rounded-xl">
+          <div class="h-[100%] w-[100%]">
+            <img
+              src="/images/kickboxing.jpg"
+              alt="kickboxing Image"
+              class="w-[100%] h-[100%] bg-cover invert-[0.2]"
+            />
+          </div>
+          <div>
+            <p
+              class="absolute top-[240px] left-5 font font-bold text-5xl text-white"
+            >
+              Kickboxing
+            </p>
+          </div>
+          <div>
+            <hr
+              class="absolute top-[280px] left-2 w-28 border-[3px] border-red-600 border-solid m-[20px]"
+            />
+          </div>
+          <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADM0lEQVR4nO2ZS2xMURjHzwyq1dDSiDTCgnqTSkjakFhIBOnOAiG1KJsiSCMRVhqJruqx8IpELKXUIzYoiUcitZB4pkEtpIg01COI90++9Ju4qXTmnLn3To+YfzKrOd9/fmfuved7XGPyyuvfElABrAYagf3AHmAHsBAYbHwWMAioAx6QXp3AAuOjgHLgZgD2BdAC7AUa9CNX5pF+/xk4AMwzvggoDQA+BmqARD9rk0Bznyt0AhiWe/K/4Y4r0G2gxGK9bGY6sAXo1tjTuaHtH2o88AP4DlRmET8B6NHNLImH0g5kvUK0hvDYmbrFzEAJOKMQa0N4TFOPp9HSuUG0K0R1yGP7C/BrwB564IluZGpIn/fqUxodnRtAhwJMCenzSX1GREfnBnBNAbLO1MAo9fgYLZ0bhCQz0coQHlXqcS9aOjcIKQRFTSE8tqrHoWjp3CAWK8SVEB7n1WNVtHRuEEsV4kM25TlQALxTj5p4KO1ArirEtv4KxQzxCWC7elyOh9Lt+K0M4VGpHg+jpXODOKkQdSE81qlHS7R0bhBrFOKZNE9ZxDdorKg2Hkr7OumU1klSZiQdYpOB0qRVvOKltYO6o0AzHGJmaUyH8UX09uOi3Q4xTRpz2PgiYI5CSbc32rK+eqMx841PAs4qmOSWsjTrhgMXdW2b8U3AWOBVpkZLehddIxl9ovFR9E5SMm1EJiiiTuOrgPsWG0n16F3GV/Gn9Z2ZYYQk6jY+ChgjXZ5CjkuzrkQT6FfZlPFJ9Ca3u7qJCxbrW1LJEJibG8o0kkwunR3wLTD7LbeIKwtM7WVSeQyYbXIpaaCAZdIV6i0i+qkzYOtxjuaToxqb0g1gOTAkzg0UAhsD1So6xjmS7uG28JVT7GDg+RI9BzYDRVFuIKEvcOSdR0pyW2wCRkb4OyXAhsCzJnqp/UoirHkxcC5g3J6LqTmwqM+LIyl/irM1GwpcV6PXwIrIiTMz1AZuOWEpyMZkXyoDA5NjIbU/2ruUpdk1eJK+vJETpSo2SnueamWRY77CJXCX/gOXjCcC2pSp0SXolgbVG08E1KcOHJegt/irHttNFOG/CkNc3Lzy+u/0G2OFKmFs1enpAAAAAElFTkSuQmCC"
+              class="w-[30px] h-[30px] absolute top-[320px] left-5"
+            />
+            <p
+              class="absolute top-[323px] left-[55px] text-white font font-bold text-lg"
+            >
+              Julia de Jong
+            </p>
+          </div>
+          <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD3ElEQVR4nO2a229NQRTGt9CeCqHVKo88SgX/BFp33hRvpF5Kg9eWN+LyImni7yAIoiJxb90TVEmE6oM23txS8pNV3zBh95x9mXN6iC85OTtnZr5Za8+smXU5UfQf/yiAecAm4BhwFngGvAe+6GPPT9VmfTYCDVE1AKgDdgAXgW+kx1fgArAdKEyFAjOB/cCIJ9RnoA/o1sossTcO1OjToN+srQe4ojEOb4F99nIqpcRa4KUnQD+wE5ibgase2AUMeHwvgLZyb6NT3oR3gVUB+VuB+x5/b/DVARZKcMMHoBOYnnDsbeBmwr7Tgb3AR2+1F+RWQOSLtdzo1FmacvwEUo5ZBgxq6JDJkFrw3wjne4R3gKYMHKkVMehwuKbhZpMLoxw24bbTDWBWRp5MihhsTuCWt83S24xn2Lad5qUmCKCIAWj0dkVvlOGIdYadyiZCK+LZjDsAWqMUl527JzoTDSqzIgagyzP+0lsMOODdE4mO2AopMgN4ILquUp0LchUMK/NOHlIRA7BGdCNFV0XO28QJEQVCYEWmeSdpe7GOl9RpZ4iJQytiADpEeT4qEk98lUea2gGsoCINim/GY+UENmvOy6EmLYciBuCqaNdHvwM4rsbuqPoVOSTao3GNFoIaNvwFimwW7em4xudqXBJoMosKTzhFFKfXBOJuEeezuMYxNTYGmsxX4qcygbibxDca12gngaE20GSjMYq8C8RdEN/nSijyOkaR4UooMhZqaykgexWjyOG83Em2VhBjB5qBx+J6pZUx/+1IwNVuKWbs7vjdmHMlHnkBWbbwtASALcWOX3ch9gRYCftuzsIT4kK0DKChLxHbFKxEjIuybjJnzDmN9VEVroTn3DqncU4UByWUDbtiO8SP6a+UEgZgt+Y7F00GYJs6DUza6c8xN5W7rYQS04B7knFrqYtmWB1XR1UGYJ1ke1OyDKHUPtI8d/IhFPiRfHgo2fYkzTC6XO/eqErArxc8mLgoZPUJDbKk2LKyS1lanhXAJ8mUrpSh+oR7A0Fc+yzgxx1lSTnDySwEdd7ReitrEjsPgNmqr6DvQp63YdVZV1aYH1za4hffdc39InfBR4WeIW+bLQ8mbXGbGNKc5pUvCkW8wNtmH5VQnhGE/M8jdp9n2LeDX7SyGXcAoIRyW8Ab20oZ7p6YMOyy1t5VfXXLjnKxHVn+xSA72O25HW4rBasWJ1mdLs+dQR6pudcHlXdqUbWpVh97Xqqg6KD6ujyBczv2TNU/IMw3a7eEskKAtBhXZLp1ShSIgyWULRdrURtwRgHWmPenGnt+YuGp+qyfNJ74j+jvx3dwg7SM9u4o2QAAAABJRU5ErkJggg=="
+              class="w-[30px] h-[30px] absolute top-[323px] left-[180px]"
+            />
+            <p
+              class="absolute top-[323px] left-[220px] text-white font font-bold text-lg"
+            >
+              Vr: 18:30-19:30
+            </p>
+          </div>
+          <div>
+            <div
+              class="button-animation"
+              id="button-animation-js"
+              data-animation="5"
+            ></div>
+            <button
+              class="absolute top-[390px] left-5 p-3 bg-white font font-bold px-[70px] text-xl buttonCourse"
+              data-button="5"
+            >
+              Contact
+            </button>
+          </div>
+        </div>
+        <div class="w-[350px] h-[450px] overflow-hidden relative rounded-xl">
+          <div class="h-[100%] w-[100%]">
+            <img
+              src="/images/training.jpg"
+              alt="training Image"
+              class="w-[100%] h-[100%] bg-cover invert-[0.2]"
+            />
+          </div>
+          <div>
+            <p
+              class="absolute top-[240px] left-5 font font-bold text-5xl text-white"
+            >
+              Training
+            </p>
+          </div>
+          <div>
+            <hr
+              class="absolute top-[280px] left-2 w-28 border-[3px] border-red-600 border-solid m-[20px]"
+            />
+          </div>
+          <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADM0lEQVR4nO2ZS2xMURjHzwyq1dDSiDTCgnqTSkjakFhIBOnOAiG1KJsiSCMRVhqJruqx8IpELKXUIzYoiUcitZB4pkEtpIg01COI90++9Ju4qXTmnLn3To+YfzKrOd9/fmfuved7XGPyyuvfElABrAYagf3AHmAHsBAYbHwWMAioAx6QXp3AAuOjgHLgZgD2BdAC7AUa9CNX5pF+/xk4AMwzvggoDQA+BmqARD9rk0Bznyt0AhiWe/K/4Y4r0G2gxGK9bGY6sAXo1tjTuaHtH2o88AP4DlRmET8B6NHNLImH0g5kvUK0hvDYmbrFzEAJOKMQa0N4TFOPp9HSuUG0K0R1yGP7C/BrwB564IluZGpIn/fqUxodnRtAhwJMCenzSX1GREfnBnBNAbLO1MAo9fgYLZ0bhCQz0coQHlXqcS9aOjcIKQRFTSE8tqrHoWjp3CAWK8SVEB7n1WNVtHRuEEsV4kM25TlQALxTj5p4KO1ArirEtv4KxQzxCWC7elyOh9Lt+K0M4VGpHg+jpXODOKkQdSE81qlHS7R0bhBrFOKZNE9ZxDdorKg2Hkr7OumU1klSZiQdYpOB0qRVvOKltYO6o0AzHGJmaUyH8UX09uOi3Q4xTRpz2PgiYI5CSbc32rK+eqMx841PAs4qmOSWsjTrhgMXdW2b8U3AWOBVpkZLehddIxl9ovFR9E5SMm1EJiiiTuOrgPsWG0n16F3GV/Gn9Z2ZYYQk6jY+ChgjXZ5CjkuzrkQT6FfZlPFJ9Ca3u7qJCxbrW1LJEJibG8o0kkwunR3wLTD7LbeIKwtM7WVSeQyYbXIpaaCAZdIV6i0i+qkzYOtxjuaToxqb0g1gOTAkzg0UAhsD1So6xjmS7uG28JVT7GDg+RI9BzYDRVFuIKEvcOSdR0pyW2wCRkb4OyXAhsCzJnqp/UoirHkxcC5g3J6LqTmwqM+LIyl/irM1GwpcV6PXwIrIiTMz1AZuOWEpyMZkXyoDA5NjIbU/2ruUpdk1eJK+vJETpSo2SnueamWRY77CJXCX/gOXjCcC2pSp0SXolgbVG08E1KcOHJegt/irHttNFOG/CkNc3Lzy+u/0G2OFKmFs1enpAAAAAElFTkSuQmCC"
+              class="w-[30px] h-[30px] absolute top-[320px] left-5"
+            />
+            <p
+              class="absolute top-[323px] left-[55px] text-white font font-bold text-lg"
+            >
+              Lisa van Dijk
+            </p>
+          </div>
+          <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD3ElEQVR4nO2a229NQRTGt9CeCqHVKo88SgX/BFp33hRvpF5Kg9eWN+LyImni7yAIoiJxb90TVEmE6oM23txS8pNV3zBh95x9mXN6iC85OTtnZr5Za8+smXU5UfQf/yiAecAm4BhwFngGvAe+6GPPT9VmfTYCDVE1AKgDdgAXgW+kx1fgArAdKEyFAjOB/cCIJ9RnoA/o1sossTcO1OjToN+srQe4ojEOb4F99nIqpcRa4KUnQD+wE5ibgase2AUMeHwvgLZyb6NT3oR3gVUB+VuB+x5/b/DVARZKcMMHoBOYnnDsbeBmwr7Tgb3AR2+1F+RWQOSLtdzo1FmacvwEUo5ZBgxq6JDJkFrw3wjne4R3gKYMHKkVMehwuKbhZpMLoxw24bbTDWBWRp5MihhsTuCWt83S24xn2Lad5qUmCKCIAWj0dkVvlOGIdYadyiZCK+LZjDsAWqMUl527JzoTDSqzIgagyzP+0lsMOODdE4mO2AopMgN4ILquUp0LchUMK/NOHlIRA7BGdCNFV0XO28QJEQVCYEWmeSdpe7GOl9RpZ4iJQytiADpEeT4qEk98lUea2gGsoCINim/GY+UENmvOy6EmLYciBuCqaNdHvwM4rsbuqPoVOSTao3GNFoIaNvwFimwW7em4xudqXBJoMosKTzhFFKfXBOJuEeezuMYxNTYGmsxX4qcygbibxDca12gngaE20GSjMYq8C8RdEN/nSijyOkaR4UooMhZqaykgexWjyOG83Em2VhBjB5qBx+J6pZUx/+1IwNVuKWbs7vjdmHMlHnkBWbbwtASALcWOX3ch9gRYCftuzsIT4kK0DKChLxHbFKxEjIuybjJnzDmN9VEVroTn3DqncU4UByWUDbtiO8SP6a+UEgZgt+Y7F00GYJs6DUza6c8xN5W7rYQS04B7knFrqYtmWB1XR1UGYJ1ke1OyDKHUPtI8d/IhFPiRfHgo2fYkzTC6XO/eqErArxc8mLgoZPUJDbKk2LKyS1lanhXAJ8mUrpSh+oR7A0Fc+yzgxx1lSTnDySwEdd7ReitrEjsPgNmqr6DvQp63YdVZV1aYH1za4hffdc39InfBR4WeIW+bLQ8mbXGbGNKc5pUvCkW8wNtmH5VQnhGE/M8jdp9n2LeDX7SyGXcAoIRyW8Ab20oZ7p6YMOyy1t5VfXXLjnKxHVn+xSA72O25HW4rBasWJ1mdLs+dQR6pudcHlXdqUbWpVh97Xqqg6KD6ujyBczv2TNU/IMw3a7eEskKAtBhXZLp1ShSIgyWULRdrURtwRgHWmPenGnt+YuGp+qyfNJ74j+jvx3dwg7SM9u4o2QAAAABJRU5ErkJggg=="
+              class="w-[30px] h-[30px] absolute top-[323px] left-[180px]"
+            />
+            <p
+              class="absolute top-[323px] left-[220px] text-white font font-bold text-lg"
+            >
+              Za: 18:30-19:30
+            </p>
+          </div>
+          <div>
+            <div
+              class="button-animation"
+              id="button-animation-js"
+              data-animation="6"
+            ></div>
+            <button
+              class="absolute top-[390px] left-5 p-3 bg-white font font-bold px-[70px] text-xl buttonCourse"
+              data-button="6"
+            >
+              Contact
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="flex relative bg-black w-[100%] h-[550px] sm:h-[200px] justify-center object-cover items-center"
+    >
+      <div class="flex absolute w-[100%] h-[90%]">
+        <div>
+          <img
+            src="/logo/logo.png"
+            class="absolute w-[150px] h-[150px] left-32 sm:left-10 sm:top-[-30px]"
+          />
+        </div>
+        <div>
+          <nav class="absolute top-36 left-44 sm:top-10 sm:left-[40%]">
+            <ul>
+              <li class="block mt-0 sm:inline-block">
+                <a href="/index.html">Home</a>
+              </li>
+              <li class="block mt-4 sm:inline-block">
+                <a href="shop.html">Shop</a>
+              </li>
+              <li class="block mt-4 sm:inline-block">
+                <a href="BMI.html">Prijzen</a>
+              </li>
+              <li class="block mt-4 sm:inline-block">
+                <a href="about.html">Over</a>
+              </li>
+            </ul>
+          </nav>
+          <div>
+            <p
+              class="text-white font absolute left-16 top-[490px] sm:top-36 sm:left-[43vw]"
+            >
+              &#169; FastFit B.V. | Alle Rechten Voorbehouden
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-[250px] h-[50px] justify-center items-center absolute top-[320px] left-20 sm:left-[80%] sm:top-10"
+        >
+          <a
+            href="https://twitter.com/home"
+            target="_blank"
+            class="pointer-events-auto"
+          >
+            <button class="rounded-[50%] blue h-[50px] w-[50px] cursor-pointer">
+              <img src="/icons/twitter (1).png" class="h-[100%] w-[100 %]" />
+            </button>
+          </a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            class="pointer-events-auto"
+          >
+            <button
+              class="rounded-[50%] pink h-[50px] w-[50px] ml-12 cursor-pointer"
+            >
+              <img src="/icons/instagram-logo.png" class="h-[100%] w-[100 %]" />
+            </button>
+          </a>
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            class="pointer-events-auto"
+          >
+            <button
+              class="rounded-[50%] h-[50px] w-[50px] ml-10 cursor-pointer"
+            >
+              <img src="/icons/facebook.png" class="h-[100%] w-[100 %]" />
+            </button>
+          </a>
+        </div>
+        <div>
+          <p
+            class="absolute font top-[400px] text-center text-white left-16 text-sm sm:left-12 sm:top-28 sm:text-xs sm:text-left"
+          >
+            Bedrijfsnaam: FastFit B.V. <br />
+            E-mail: FastFit@nlservices.nl <br />
+            Telefoonnummer: +31 6 12345678 <br />
+            Adres: 123 Keizersgracht, Amsterdam, Nederland
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/scripts/hamburgerMenu.js"></script>
+    <script src="/scripts/courses.js"></script>
+  </body>
+</html>

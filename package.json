@@ -1,0 +1,17 @@
+{
+  "name": "informatica-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx postcss-cli src/input.css -o dist/output.css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "postcss src/input.css -o dist/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5"
+  }
+}

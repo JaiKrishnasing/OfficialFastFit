@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="/styles/productsPage.css">
+  <link rel="stylesheet" href="/styles/animation.css">
+  <link rel="stylesheet" href="/dist/output.css">
+  <title id="title-js">FastFit - Shop</title>
+  <link rel="icon" href="/icons/logo icon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inclusive+Sans&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inclusive+Sans&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="hamburger-menu-container" id="hamburger-menu-container-js">
+    <div class="content" id="content-js">
+      <div>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACAUlEQVR4nO2avUoDURCFD1roQgoRxVrQB1DQFJYKRtCXMD6E8QWSWBhLY6+NFvoCxkL7IGIKK0EQLCKKjTF6JLDFEpLs3L0/uy4ZmC5zTiZ8u3cyu8AwhuEuCNQIcEC+Echa8M362oO8ayqC9RCxTj4SyBhsIuNrhvnWVUQXCbQEolWDjRwL/NoEllWFSwLhTm4ZaCJH4FfgVYwiPkbgXiD+SmBGo4lpAi8CnwaBcZ2Lry0wudRo5Fyg/0NgJaqHKmL5CNo7Qu2iVhOKiH0SmFfQnSXwYRUpDcRuCYwK9EYIXDtBSgOxgkBrzxlSGoh9E1gaoLNA4MspUhqIPRDw+vwYd7Eg1R0EykIsKj1qD4W1JdgOBcQ6J/VGoG5NeHo3rCGlgdgzgUkCEwSeEoGUBmKnfko+W4brUEBMmu6Q0kAseUhpIBbvXcoBYvEhZRCx+JEyhFj8SHUHgf0Ijbi/3aYeLZq52L3/ihQThRjTcCDSzojiJRmpk8QOjUzDGE+1P1a5QN2q/0WTgRjlSB30qK0kAjGmYflAOVItg+sgL86hcFegVYhlqKQcqZvErkyptsSeU1xivztDjHKktiNo550gRjlSFxoeZ1YRo7tHb1MKj948m0htRm0i4LUuXKeWbCF1pNtEwLNqHLE0vTBQCxFrWnyFoxnifWXadxjDQP/4A7Gb6LvtoO+EAAAAAElFTkSuQmCC" class="close-button" id="close-button-js">
+      </div>
+      <div class="hamburger-container-text">
+        <a class="hamburger-links" href="/index.html">Home</a> 
+        <a class="hamburger-links" href="BMI.html">Prijzen</a> 
+        <a class="hamburger-links" href="courses.html">Cursussen</a> 
+        <a class="hamburger-links" href="about.html">Over</a>
+      </div>
+  </div>
+  </div>
+  <div class="landing-page-container">
+    <div class="landing-page-header-content">
+      <div>
+        <img src="/logo/logo.png" class="landing-page-header-logo" id="landing-page-header-logo-js">
+      </div>
+      <nav id="nav-js">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="BMI.html">Prijzen</a></li>
+          <li><a href="courses.html">Cursussen</a></li>
+          <li><a href="about.html">Over</a></li> 
+        </ul>
+      </nav>  
+      <div>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACE0lEQVR4nO3Zz4uNURzH8fdFkbJGsVEYQ0mTjb+AZGtnUkg0SVPKzl9goZSFjYUMZoYkMytpsrexkLIa5EdujCyUHx899cE1de/tcr7nec7kU2dzer7d7+t2z3PP6cD/NCyC/YIXAvUY7wVzglFBiyZG8LwPYvG40kiM/oTMd3lmreCI4JOfG6VpEewzZl6wt8+zRw15RMkRrBS8M2Y7JUdw1ZAxSo7gmCGTlBzBFkPeNvLtNUgEL40ZpuQIrhlykpIjOG7IDUqOYMiQN0tpnQxRcgTXB9yjRYwHKSAnGgB5lgIy3ADIuRSQluB1jYjvgk3/DDFmskbI/SQIQ8ZqhBxKCdlRE2JBsDolpOU/xdyQy8kQHZjpGiB7IiCnMiOehmyLBDszQ84mR3Ssk5/n+OjxTbAxBGLM7UyQ2TCEIaczQQ5GQ3ZlQLQFq6Ihy/xBkZCLoYgOzJ1gyEguyHgg4nEWhCEjgZDxnJDlvkdJjfgiWJcNYszdgMPThawIQ864gUuUHMFuQ55QcgQrfOipfhLrKTn6vU4Os0TuT+YoOYI1Hdv684Jt4XukqAgOCD4nfA0/rBuTCvJVsKHuS9N7VRMeM56b6FIzMWhNeASv3MCvb7I6pnqu3aWm3aNmIVfvi5v62KOpD6lqwiO45QZm3Ew1Zj03laomPIKtXU6N1dzmVDXkiBfrTW9bqjHVr6G/qanyAyuoGwoLrnRoAAAAAElFTkSuQmCC" class="cart cursor-pointer">
+        <p class="bg-yellow-300 absolute right-[8.5vw] top-[3.2vh] h-[20px] w-[20px] text-lg text-center font rounded-full cursor-pointer" id="amount-items-js">0</p>
+      </div>
+      <div>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA9ElEQVR4nO2SMWpCQRiEv9hY2RiwUTu1sPcKdum8imnNIbyEPKyiEEIuYWMj6SwV1HSmmLAwBgm+F8UVmzcwzTD/zO7+CzliQFATJIKdORY0Y4avBfrDoFVjFCQOfA2B5sTaKEbBzmG/pxXUrW1iFGwdVrtVwdhhE+8jcGotiVHQEqxSlty4uiDAix35ubZefJzwHKkQFAQdwYvgQzAXfJlzawN7CpcEFwXPguWJn5PG4O2H2f/CK4LZ0eCnYCh4ErQFJbNtbWjPwR9mK1kF7zaGJ+ieeeMHQU+w8OxblvnbpvI54ccQPHp2n2VSDHK3ghycwA9Tdgg9Jiu7DAAAAABJRU5ErkJggg==" class="icon" id="icon-js">
+      </div>    
+      <div>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAUklEQVR4nO3WwQkAMAzDQI3ezd0xAkIH+jf0Y0iSXBg8QwxmiOsHdAjiH3mGSJIkNON3va1mHo0zhOmQZ4gkSUIzftfbaubROEOYDnmGSJJw4AMYm2x/criEYgAAAABJRU5ErkJggg==" class="hamburger-icon" id="hamburger-icon-js">
+  </div>
+  </div>
+  <div class="product-grid">
+    <div class="relative bg-black h-[450px] w-[300px] rounded-2xl mt-[200px] justify-center text-center object-contain sm:mt-[140px] sm:mr-4 ">
+      <div class="absolute h-[200px] w-[200px] top-5 left-12">
+        <img src="/images/bottle.png" class="w-[90%] h-[90%] mt-[20px] rotate-12">
+      </div>
+      <div class="absolute top-60 left-[102px]">
+        <p class="text-white text-xl font font-bold">Drinkfles</p>
+      </div>
+      <div class="absolute text-center w-[200px] top-[275px] left-12">
+        <p class="text-[grey] font text-[12px]">Voeg kleur toe aan je dagelijkse hydratatie.</p>
+      </div>
+      <div class="absolute w-20 top-[320px] left-[105px] ">
+        <p class="text-[red]  font text-xl">&euro;9.99,-</p>
+      </div>
+      <div class="absolute w-[200px] h-5 left-12 top-[360px]">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADV0lEQVR4nO2ay4sTQRDGy03XuIKC+EBFBE+CsCqo6J/g4yCKiiCCi8IKKgjqUVjFuyL4uunuzUBSNSroRSPowYPii0XwDQqeFHxkN9XRbelsVtfHbpJJMj0zzg8aAkO6+/u6uqe7egBSUlJSUlJSUkLEZGG2ZtUvjB9s0aT6zGWYBf8DJgueZvVEM5rfi3psn0HS0aT2/i2+WkjthSRjDEzSpJ5OYMAz0wsdkFTK+cy6ccVXS9nPrIWkIozXaxkghNcgiZTy3iJh/F6HAcOlvLcYkoYwnq0l/qcJjGcgSRiC6cL4pW4DCIsmCzMgKWhSh+sVP+aNcAiSgMlCRrN62bABrN7Y/0LcKbG3qXHxI6VE3kaIO8J4K6gBwliAuGF6ocPkYJ5cxuXi486g4n+a4ONOW5et0/ku0eRhpuSwy+7WhLBbszoihKc1KRbCu5rUOyEsNyt6grdDudrG3Wqbp6t96K70KYddto8tFy553BFsIXNV1Ash3N4a8YTb7O7MvaiGo2VYfG9r0wZoUo9ci2kiEh42HwGMg+6FBI6CYvMRwOphjCPgQdMGlNjbEtc1oETe5qYNsNhUlTB+i41429dWp9fKlFkjhJ9jMPJfS+xtgHYgPi7VrN5GWPx7zWoltJPilSnzI7kwkhoYoskLIQwMwzSbu4vQyN+0SZdQxP9xwdHvWrxmdckUoBNc5fmF8Kir16QQnrJ9ANcIYbcw6hCF21PhHoh93o8DFlKHIWoI48kQI+AERA0hvBOaAYy3IUqYLGTsDizECCiaAiiIClLZIYY0/3+ZsASighDuDt0Axl0QFYTxvIMIOAdRQZO6H7YBmvEeRAFTgE5hFAdTQDvbAo9Fs1rtYPRHSl6tAtdoVvsCzuFP2lf7ban8DmSC2heF+d8XIHyvDFLngtE6zFWYG+hkSepiFAwYaGDEXpcps368uuwzTepVAwYMgGukjnsDe3qrHF2zMLVWfSYLUypH7DoWVrv7BNfo2neG9zThikAfVRHeqBEBz8E1mtXBcUbnoybsaeZKe+TDSuyp1PXvKXWgtWqCZ4WOC+FQdYHTdnEyPsxpWRs+zNGsLoxevdtpJ4THIpEN+i1R6uPSdn7dZeuWHC6zbbWrjZSUlJSUlJQU+F/4AcukCuzzFuWtAAAAAElFTkSuQmCC" class="h-6 inline-block">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADV0lEQVR4nO2ay4sTQRDGy03XuIKC+EBFBE+CsCqo6J/g4yCKiiCCi8IKKgjqUVjFuyL4uunuzUBSNSroRSPowYPii0XwDQqeFHxkN9XRbelsVtfHbpJJMj0zzg8aAkO6+/u6uqe7egBSUlJSUlJSUkLEZGG2ZtUvjB9s0aT6zGWYBf8DJgueZvVEM5rfi3psn0HS0aT2/i2+WkjthSRjDEzSpJ5OYMAz0wsdkFTK+cy6ccVXS9nPrIWkIozXaxkghNcgiZTy3iJh/F6HAcOlvLcYkoYwnq0l/qcJjGcgSRiC6cL4pW4DCIsmCzMgKWhSh+sVP+aNcAiSgMlCRrN62bABrN7Y/0LcKbG3qXHxI6VE3kaIO8J4K6gBwliAuGF6ocPkYJ5cxuXi486g4n+a4ONOW5et0/ku0eRhpuSwy+7WhLBbszoihKc1KRbCu5rUOyEsNyt6grdDudrG3Wqbp6t96K70KYddto8tFy553BFsIXNV1Ash3N4a8YTb7O7MvaiGo2VYfG9r0wZoUo9ci2kiEh42HwGMg+6FBI6CYvMRwOphjCPgQdMGlNjbEtc1oETe5qYNsNhUlTB+i41429dWp9fKlFkjhJ9jMPJfS+xtgHYgPi7VrN5GWPx7zWoltJPilSnzI7kwkhoYoskLIQwMwzSbu4vQyN+0SZdQxP9xwdHvWrxmdckUoBNc5fmF8Kir16QQnrJ9ANcIYbcw6hCF21PhHoh93o8DFlKHIWoI48kQI+AERA0hvBOaAYy3IUqYLGTsDizECCiaAiiIClLZIYY0/3+ZsASighDuDt0Axl0QFYTxvIMIOAdRQZO6H7YBmvEeRAFTgE5hFAdTQDvbAo9Fs1rtYPRHSl6tAtdoVvsCzuFP2lf7ban8DmSC2heF+d8XIHyvDFLngtE6zFWYG+hkSepiFAwYaGDEXpcps368uuwzTepVAwYMgGukjnsDe3qrHF2zMLVWfSYLUypH7DoWVrv7BNfo2neG9zThikAfVRHeqBEBz8E1mtXBcUbnoybsaeZKe+TDSuyp1PXvKXWgtWqCZ4WOC+FQdYHTdnEyPsxpWRs+zNGsLoxevdtpJ4THIpEN+i1R6uPSdn7dZeuWHC6zbbWrjZSUlJSUlJQU+F/4AcukCuzzFuWtAAAAAElFTkSuQmCC" class="h-6 inline-block">`
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADV0lEQVR4nO2ay4sTQRDGy03XuIKC+EBFBE+CsCqo6J/g4yCKiiCCi8IKKgjqUVjFuyL4uunuzUBSNSroRSPowYPii0XwDQqeFHxkN9XRbelsVtfHbpJJMj0zzg8aAkO6+/u6uqe7egBSUlJSUlJSUkLEZGG2ZtUvjB9s0aT6zGWYBf8DJgueZvVEM5rfi3psn0HS0aT2/i2+WkjthSRjDEzSpJ5OYMAz0wsdkFTK+cy6ccVXS9nPrIWkIozXaxkghNcgiZTy3iJh/F6HAcOlvLcYkoYwnq0l/qcJjGcgSRiC6cL4pW4DCIsmCzMgKWhSh+sVP+aNcAiSgMlCRrN62bABrN7Y/0LcKbG3qXHxI6VE3kaIO8J4K6gBwliAuGF6ocPkYJ5cxuXi486g4n+a4ONOW5et0/ku0eRhpuSwy+7WhLBbszoihKc1KRbCu5rUOyEsNyt6grdDudrG3Wqbp6t96K70KYddto8tFy553BFsIXNV1Ash3N4a8YTb7O7MvaiGo2VYfG9r0wZoUo9ci2kiEh42HwGMg+6FBI6CYvMRwOphjCPgQdMGlNjbEtc1oETe5qYNsNhUlTB+i41429dWp9fKlFkjhJ9jMPJfS+xtgHYgPi7VrN5GWPx7zWoltJPilSnzI7kwkhoYoskLIQwMwzSbu4vQyN+0SZdQxP9xwdHvWrxmdckUoBNc5fmF8Kir16QQnrJ9ANcIYbcw6hCF21PhHoh93o8DFlKHIWoI48kQI+AERA0hvBOaAYy3IUqYLGTsDizECCiaAiiIClLZIYY0/3+ZsASighDuDt0Axl0QFYTxvIMIOAdRQZO6H7YBmvEeRAFTgE5hFAdTQDvbAo9Fs1rtYPRHSl6tAtdoVvsCzuFP2lf7ban8DmSC2heF+d8XIHyvDFLngtE6zFWYG+hkSepiFAwYaGDEXpcps368uuwzTepVAwYMgGukjnsDe3qrHF2zMLVWfSYLUypH7DoWVrv7BNfo2neG9zThikAfVRHeqBEBz8E1mtXBcUbnoybsaeZKe+TDSuyp1PXvKXWgtWqCZ4WOC+FQdYHTdnEyPsxpWRs+zNGsLoxevdtpJ4THIpEN+i1R6uPSdn7dZeuWHC6zbbWrjZSUlJSUlJQU+F/4AcukCuzzFuWtAAAAAElFTkSuQmCC" class="h-6 inline-block">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADV0lEQVR4nO2ay4sTQRDGy03XuIKC+EBFBE+CsCqo6J/g4yCKiiCCi8IKKgjqUVjFuyL4uunuzUBSNSroRSPowYPii0XwDQqeFHxkN9XRbelsVtfHbpJJMj0zzg8aAkO6+/u6uqe7egBSUlJSUlJSUkLEZGG2ZtUvjB9s0aT6zGWYBf8DJgueZvVEM5rfi3psn0HS0aT2/i2+WkjthSRjDEzSpJ5OYMAz0wsdkFTK+cy6ccVXS9nPrIWkIozXaxkghNcgiZTy3iJh/F6HAcOlvLcYkoYwnq0l/qcJjGcgSRiC6cL4pW4DCIsmCzMgKWhSh+sVP+aNcAiSgMlCRrN62bABrN7Y/0LcKbG3qXHxI6VE3kaIO8J4K6gBwliAuGF6ocPkYJ5cxuXi486g4n+a4ONOW5et0/ku0eRhpuSwy+7WhLBbszoihKc1KRbCu5rUOyEsNyt6grdDudrG3Wqbp6t96K70KYddto8tFy553BFsIXNV1Ash3N4a8YTb7O7MvaiGo2VYfG9r0wZoUo9ci2kiEh42HwGMg+6FBI6CYvMRwOphjCPgQdMGlNjbEtc1oETe5qYNsNhUlTB+i41429dWp9fKlFkjhJ9jMPJfS+xtgHYgPi7VrN5GWPx7zWoltJPilSnzI7kwkhoYoskLIQwMwzSbu4vQyN+0SZdQxP9xwdHvWrxmdckUoBNc5fmF8Kir16QQnrJ9ANcIYbcw6hCF21PhHoh93o8DFlKHIWoI48kQI+AERA0hvBOaAYy3IUqYLGTsDizECCiaAiiIClLZIYY0/3+ZsASighDuDt0Axl0QFYTxvIMIOAdRQZO6H7YBmvEeRAFTgE5hFAdTQDvbAo9Fs1rtYPRHSl6tAtdoVvsCzuFP2lf7ban8DmSC2heF+d8XIHyvDFLngtE6zFWYG+hkSepiFAwYaGDEXpcps368uuwzTepVAwYMgGukjnsDe3qrHF2zMLVWfSYLUypH7DoWVrv7BNfo2neG9zThikAfVRHeqBEBz8E1mtXBcUbnoybsaeZKe+TDSuyp1PXvKXWgtWqCZ4WOC+FQdYHTdnEyPsxpWRs+zNGsLoxevdtpJ4THIpEN+i1R6uPSdn7dZeuWHC6zbbWrjZSUlJSUlJQU+F/4AcukCuzzFuWtAAAAAElFTkSuQmCC" class="h-6 inline-block">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADV0lEQVR4nO2ay4sTQRDGy03XuIKC+EBFBE+CsCqo6J/g4yCKiiCCi8IKKgjqUVjFuyL4uunuzUBSNSroRSPowYPii0XwDQqeFHxkN9XRbelsVtfHbpJJMj0zzg8aAkO6+/u6uqe7egBSUlJSUlJSUkLEZGG2ZtUvjB9s0aT6zGWYBf8DJgueZvVEM5rfi3psn0HS0aT2/i2+WkjthSRjDEzSpJ5OYMAz0wsdkFTK+cy6ccVXS9nPrIWkIozXaxkghNcgiZTy3iJh/F6HAcOlvLcYkoYwnq0l/qcJjGcgSRiC6cL4pW4DCIsmCzMgKWhSh+sVP+aNcAiSgMlCRrN62bABrN7Y/0LcKbG3qXHxI6VE3kaIO8J4K6gBwliAuGF6ocPkYJ5cxuXi486g4n+a4ONOW5et0/ku0eRhpuSwy+7WhLBbszoihKc1KRbCu5rUOyEsNyt6grdDudrG3Wqbp6t96K70KYddto8tFy553BFsIXNV1Ash3N4a8YTb7O7MvaiGo2VYfG9r0wZoUo9ci2kiEh42HwGMg+6FBI6CYvMRwOphjCPgQdMGlNjbEtc1oETe5qYNsNhUlTB+i41429dWp9fKlFkjhJ9jMPJfS+xtgHYgPi7VrN5GWPx7zWoltJPilSnzI7kwkhoYoskLIQwMwzSbu4vQyN+0SZdQxP9xwdHvWrxmdckUoBNc5fmF8Kir16QQnrJ9ANcIYbcw6hCF21PhHoh93o8DFlKHIWoI48kQI+AERA0hvBOaAYy3IUqYLGTsDizECCiaAiiIClLZIYY0/3+ZsASighDuDt0Axl0QFYTxvIMIOAdRQZO6H7YBmvEeRAFTgE5hFAdTQDvbAo9Fs1rtYPRHSl6tAtdoVvsCzuFP2lf7ban8DmSC2heF+d8XIHyvDFLngtE6zFWYG+hkSepiFAwYaGDEXpcps368uuwzTepVAwYMgGukjnsDe3qrHF2zMLVWfSYLUypH7DoWVrv7BNfo2neG9zThikAfVRHeqBEBz8E1mtXBcUbnoybsaeZKe+TDSuyp1PXvKXWgtWqCZ4WOC+FQdYHTdnEyPsxpWRs+zNGsLoxevdtpJ4THIpEN+i1R6uPSdn7dZeuWHC6zbbWrjZSUlJSUlJQU+F/4AcukCuzzFuWtAAAAAElFTkSuQmCC" class="h-6 inline-block">
+      </div>
+      <div class="absolute bg-[red] bottom-0 w-[100%] h-12 rounded-b-2xl cursor-pointer" >
+        <p class="text-white font-cartoon text-[30px] font-bold redirect" data-redirect="0">In winkelwagentje</p>
+      </div>
+    </div>
+    <div class="relative bg-black h-[450px] w-[300px] rounded-2xl mt-[140px] justify-center text-center object-contain">
+      <div class="absolute h-[200px] w-[200px] top-5 left-12">
+        <img src="/images/boxing gloves.png" class="w-[90%] h-[90%] mt-[20px]">
+      </div>
+      <div class="absolute top-60 left-16">
+        <p class="text-white text-xl font font-bold">Bokshandschoenen</p>
+      </div>
+      <div class="absolute text-center w-[200px] top-[275px] left-12">
+        <p class="text-[grey] font text-[12px]">Maximaliseer je slagkracht en bescherm je handen in stijl.</p>
+      </div>
+      <div class="absolute w-20 top-[320px] left-[105px] ">
+        <p class="text-[red]  font text-xl">&euro;16.99,-</p>
+      </div>
+      <div class="absolute w-[200px] h-5 left-12 top-[360px]">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADV0lEQVR4nO2ay4sTQRDGy03XuIKC+EBFBE+CsCqo6J/g4yCKiiCCi8IKKgjqUVjFuyL4uunuzUBSNSroRSPowYPii0XwDQqeFHxkN9XRbelsVtfHbpJJMj0zzg8aAkO6+/u6uqe7egBSUlJSUlJSUkLEZGG2ZtUvjB9s0aT6zGWYBf8DJgueZvVEM5rfi3psn0HS0aT2/i2+WkjthSRjDEzSpJ5OYMAz0wsdkFTK+cy6ccVXS9nPrIWkIozXaxkghNcgiZTy3iJh/F6HAcOlvLcYkoYwnq0l/qcJjGcgSRiC6cL4pW4DCIsmCzMgKWhSh+sVP+aNcAiSgMlCRrN62bABrN7Y/0LcKbG3qXHxI6VE3kaIO8J4K6gBwliAuGF6ocPkYJ5cxuXi486g4n+a4ONOW5et0/ku0eRhpuSwy+7WhLBbszoihKc1KRbCu5rUOyEsNyt6grdDudrG3Wqbp6t96K70KYddto8tFy553BFsIXNV1Ash3N4a8YTb7O7MvaiGo2VYfG9r0wZoUo9ci2kiEh42HwGMg+6FBI6CYvMRwOphjCPgQdMGlNjbEtc1oETe5qYNsNhUlTB+i41429dWp9fKlFkjhJ9jMPJfS+xtgHYgPi7VrN5GWPx7zWoltJPilSnzI7kwkhoYoskLIQwMwzSbu4vQyN+0SZdQxP9xwdHvWrxmdckUoBNc5fmF8Kir16QQnrJ9ANcIYbcw6hCF21PhHoh93o8DFlKHIWoI48kQI+AERA0hvBOaAYy3IUqYLGTsDizECCiaAiiIClLZIYY0/3+ZsASighDuDt0Axl0QFYTxvIMIOAdRQZO6H7YBmvEeRAFTgE5hFAdTQDvbAo9Fs1rtYPRHSl6tAtdoVvsCzuFP2lf7ban8DmSC2heF+d8XIHyvDFLngtE6zFWYG+hkSepiFAwYaGDEXpcps368uuwzTepVAwYMgGukjnsDe3qrHF2zMLVWfSYLUypH7DoWVrv7BNfo2neG9zThikAfVRHeqBEBz8E1mtXBcUbnoybsaeZKe+TDSuyp1PXvKXWgtWqCZ4WOC+FQdYHTdnEyPsxpWRs+zNGsLoxevdtpJ4THIpEN+i1R6uPSdn7dZeuWHC6zbbWrjZSUlJSUlJQU+F/4AcukCuzzFuWtAAAAAElFTkSuQmCC" class="h-6 inline-block">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADV0lEQVR4nO2ay4sTQRDGy03XuIKC+EBFBE+CsCqo6J/g4yCKiiCCi8IKKgjqUVjFuyL4uunuzUBSNSroRSPowYPii0XwDQqeFHxkN9XRbelsVtfHbpJJMj0zzg8aAkO6+/u6uqe7egBSUlJSUlJSUkLEZGG2ZtUvjB9s0aT6zGWYBf8DJgueZvVEM5rfi3psn0HS0aT2/i2+WkjthSRjDEzSpJ5OYMAz0wsdkFTK+cy6ccVXS9nPrIWkIozXaxkghNcgiZTy3iJh/F6HAcOlvLcYkoYwnq0l/qcJjGcgSRiC6cL4pW4DCIsmCzMgKWhSh+sVP+aNcAiSgMlCRrN62bABrN7Y/0LcKbG3qXHxI6VE3kaIO8J4K6gBwliAuGF6ocPkYJ5cxuXi486g4n+a4ONOW5et0/ku0eRhpuSwy+7WhLBbszoihKc1KRbCu5rUOyEsNyt6grdDudrG3Wqbp6t96K70KYddto8tFy553BFsIXNV1Ash3N4a8YTb7O7MvaiGo2VYfG9r0wZoUo9ci2kiEh42HwGMg+6FBI6CYvMRwOphjCPgQdMGlNjbEtc1oETe5qYNsNhUlTB+i41429dWp9fKlFkjhJ9jMPJfS+xtgHYgPi7VrN5GWPx7zWoltJPilSnzI7kwkhoYoskLIQwMwzSbu4vQyN+0SZdQxP9xwdHvWrxmdckUoBNc5fmF8Kir16QQnrJ9ANcIYbcw6hCF21PhHoh93o8DFlKHIWoI48kQI+AERA0hvBOaAYy3IUqYLGTsDizECCiaAiiIClLZIYY0/3+ZsASighDuDt0Axl0QFYTxvIMIOAdRQZO6H7YBmvEeRAFTgE5hFAdTQDvbAo9Fs1rtYPRHSl6tAtdoVvsCzuFP2lf7ban8DmSC2heF+d8XIHyvDFLngtE6zFWYG+hkSepiFAwYaGDEXpcps368uuwzTepVAwYMgGukjnsDe3qrHF2zMLVWfSYLUypH7DoWVrv7BNfo2neG9zThikAfVRHeqBEBz8E1mtXBcUbnoybsaeZKe+TDSuyp1PXvKXWgtWqCZ4WOC+FQdYHTdnEyPsxpWRs+zNGsLoxevdtpJ4THIpEN+i1R6uPSdn7dZeuWHC6zbbWrjZSUlJSUlJQU+F/4AcukCuzzFuWtAAAAAElFTkSuQmCC" class="h-6 inline-block">`
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADV0lEQVR4nO2ay4sTQRDGy03XuIKC+EBFBE+CsCqo6J/g4yCKiiCCi8IKKgjqUVjFuyL4uunuzUBSNSroRSPowYPii0XwDQqeFHxkN9XRbelsVtfHbpJJMj0zzg8aAkO6+/u6uqe7egBSUlJSUlJSUkLEZGG2ZtUvjB9s0aT6zGWYBf8DJgueZvVEM5rfi3psn0HS0aT2/i2+WkjthSRjDEzSpJ5OYMAz0wsdkFTK+cy6ccVXS9nPrIWkIozXaxkghNcgiZTy3iJh/F6HAcOlvLcYkoYwnq0l/qcJjGcgSRiC6cL4pW4DCIsmCzMgKWhSh+sVP+aNcAiSgMlCRrN62bABrN7Y/0LcKbG3qXHxI6VE3kaIO8J4K6gBwliAuGF6ocPkYJ5cxuXi486g4n+a4ONOW5et0/ku0eRhpuSwy+7WhLBbszoihKc1KRbCu5rUOyEsNyt6grdDudrG3Wqbp6t96K70KYddto8tFy553BFsIXNV1Ash3N4a8YTb7O7MvaiGo2VYfG9r0wZoUo9ci2kiEh42HwGMg+6FBI6CYvMRwOphjCPgQdMGlNjbEtc1oETe5qYNsNhUlTB+i41429dWp9fKlFkjhJ9jMPJfS+xtgHYgPi7VrN5GWPx7zWoltJPilSnzI7kwkhoYoskLIQwMwzSbu4vQyN+0SZdQxP9xwdHvWrxmdckUoBNc5fmF8Kir16QQnrJ9ANcIYbcw6hCF21PhHoh93o8DFlKHIWoI48kQI+AERA0hvBOaAYy3IUqYLGTsDizECCiaAiiIClLZIYY0/3+ZsASighDuDt0Axl0QFYTxvIMIOAdRQZO6H7YBmvEeRAFTgE5hFAdTQDvbAo9Fs1rtYPRHSl6tAtdoVvsCzuFP2lf7ban8DmSC2heF+d8XIHyvDFLngtE6zFWYG+hkSepiFAwYaGDEXpcps368uuwzTepVAwYMgGukjnsDe3qrHF2zMLVWfSYLUypH7DoWVrv7BNfo2neG9zThikAfVRHeqBEBz8E1mtXBcUbnoybsaeZKe+TDSuyp1PXvKXWgtWqCZ4WOC+FQdYHTdnEyPsxpWRs+zNGsLoxevdtpJ4THIpEN+i1R6uPSdn7dZeuWHC6zbbWrjZSUlJSUlJQU+F/4AcukCuzzFuWtAAAAAElFTkSuQmCC" class="h-6 inline-block">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADV0lEQVR4nO2ay4sTQRDGy03XuIKC+EBFBE+CsCqo6J/g4yCKiiCCi8IKKgjqUVjFuyL4uunuzUBSNSroRSPowYPii0XwDQqeFHxkN9XRbelsVtfHbpJJMj0zzg8aAkO6+/u6uqe7egBSUlJSUlJSUkLEZGG2ZtUvjB9s0aT6zGWYBf8DJgueZvVEM5rfi3psn0HS0aT2/i2+WkjthSRjDEzSpJ5OYMAz0wsdkFTK+cy6ccVXS9nPrIWkIozXaxkghNcgiZTy3iJh/F6HAcOlvLcYkoYwnq0l/qcJjGcgSRiC6cL4pW4DCIsmCzMgKWhSh+sVP+aNcAiSgMlCRrN62bABrN7Y/0LcKbG3qXHxI6VE3kaIO8J4K6gBwliAuGF6ocPkYJ5cxuXi486g4n+a4ONOW5et0/ku0eRhpuSwy+7WhLBbszoihKc1KRbCu5rUOyEsNyt6grdDudrG3Wqbp6t96K70KYddto8tFy553BFsIXNV1Ash3N4a8YTb7O7MvaiGo2VYfG9r0wZoUo9ci2kiEh42HwGMg+6FBI6CYvMRwOphjCPgQdMGlNjbEtc1oETe5qYNsNhUlTB+i41429dWp9fKlFkjhJ9jMPJfS+xtgHYgPi7VrN5GWPx7zWoltJPilSnzI7kwkhoYoskLIQwMwzSbu4vQyN+0SZdQxP9xwdHvWrxmdckUoBNc5fmF8Kir16QQnrJ9ANcIYbcw6hCF21PhHoh93o8DFlKHIWoI48kQI+AERA0hvBOaAYy3IUqYLGTsDizECCiaAiiIClLZIYY0/3+ZsASighDuDt0Axl0QFYTxvIMIOAdRQZO6H7YBmvEeRAFTgE5hFAdTQDvbAo9Fs1rtYPRHSl6tAtdoVvsCzuFP2lf7ban8DmSC2heF+d8XIHyvDFLngtE6zFWYG+hkSepiFAwYaGDEXpcps368uuwzTepVAwYMgGukjnsDe3qrHF2zMLVWfSYLUypH7DoWVrv7BNfo2neG9zThikAfVRHeqBEBz8E1mtXBcUbnoybsaeZKe+TDSuyp1PXvKXWgtWqCZ4WOC+FQdYHTdnEyPsxpWRs+zNGsLoxevdtpJ4THIpEN+i1R6uPSdn7dZeuWHC6zbbWrjZSUlJSUlJQU+F/4AcukCuzzFuWtAAAAAElFTkSuQmCC" class="h-6 inline-block">
+      </div>
+      <div class="absolute bg-[red] bottom-0 w-[100%] h-12 rounded-b-2xl cursor-pointer" >
+        <p class="text-white font-cartoon text-[30px] font-bold redirect" data-redirect="1">In winkelwagentje</p>
+      </div>
+    </div>
+    <div class="relative bg-black h-[450px] w-[300px] rounded-2xl mt-[140px] justify-center text-center object-contain mb-[200px]">
+      <div class="absolute h-[200px] w-[200px] top-5 left-12">
+        <img src="/images/shirt.png" class="w-[90%] h-[90%] mt-[20px]">
+      </div>
+      <div class="absolute top-60 left-[90px]">
+        <p class="text-white text-xl font font-bold">FastFit Shirt</p>
+      </div>
+      <div class="absolute text-center w-[200px] top-[275px] left-12">
+        <p class="text-[grey] font text-[12px]">Sport in stijl met dit comfortabele en modieuze shirt.</p>
+      </div>
+      <div class="absolute w-20 top-[320px] left-[105px] ">
+        <p class="text-[red]  font text-xl">&euro;23.99,-</p>
+      </div>
+      <div class="absolute w-[200px] h-5 left-12 top-[360px]">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADV0lEQVR4nO2ay4sTQRDGy03XuIKC+EBFBE+CsCqo6J/g4yCKiiCCi8IKKgjqUVjFuyL4uunuzUBSNSroRSPowYPii0XwDQqeFHxkN9XRbelsVtfHbpJJMj0zzg8aAkO6+/u6uqe7egBSUlJSUlJSUkLEZGG2ZtUvjB9s0aT6zGWYBf8DJgueZvVEM5rfi3psn0HS0aT2/i2+WkjthSRjDEzSpJ5OYMAz0wsdkFTK+cy6ccVXS9nPrIWkIozXaxkghNcgiZTy3iJh/F6HAcOlvLcYkoYwnq0l/qcJjGcgSRiC6cL4pW4DCIsmCzMgKWhSh+sVP+aNcAiSgMlCRrN62bABrN7Y/0LcKbG3qXHxI6VE3kaIO8J4K6gBwliAuGF6ocPkYJ5cxuXi486g4n+a4ONOW5et0/ku0eRhpuSwy+7WhLBbszoihKc1KRbCu5rUOyEsNyt6grdDudrG3Wqbp6t96K70KYddto8tFy553BFsIXNV1Ash3N4a8YTb7O7MvaiGo2VYfG9r0wZoUo9ci2kiEh42HwGMg+6FBI6CYvMRwOphjCPgQdMGlNjbEtc1oETe5qYNsNhUlTB+i41429dWp9fKlFkjhJ9jMPJfS+xtgHYgPi7VrN5GWPx7zWoltJPilSnzI7kwkhoYoskLIQwMwzSbu4vQyN+0SZdQxP9xwdHvWrxmdckUoBNc5fmF8Kir16QQnrJ9ANcIYbcw6hCF21PhHoh93o8DFlKHIWoI48kQI+AERA0hvBOaAYy3IUqYLGTsDizECCiaAiiIClLZIYY0/3+ZsASighDuDt0Axl0QFYTxvIMIOAdRQZO6H7YBmvEeRAFTgE5hFAdTQDvbAo9Fs1rtYPRHSl6tAtdoVvsCzuFP2lf7ban8DmSC2heF+d8XIHyvDFLngtE6zFWYG+hkSepiFAwYaGDEXpcps368uuwzTepVAwYMgGukjnsDe3qrHF2zMLVWfSYLUypH7DoWVrv7BNfo2neG9zThikAfVRHeqBEBz8E1mtXBcUbnoybsaeZKe+TDSuyp1PXvKXWgtWqCZ4WOC+FQdYHTdnEyPsxpWRs+zNGsLoxevdtpJ4THIpEN+i1R6uPSdn7dZeuWHC6zbbWrjZSUlJSUlJQU+F/4AcukCuzzFuWtAAAAAElFTkSuQmCC" class="h-6 inline-block">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADV0lEQVR4nO2ay4sTQRDGy03XuIKC+EBFBE+CsCqo6J/g4yCKiiCCi8IKKgjqUVjFuyL4uunuzUBSNSroRSPowYPii0XwDQqeFHxkN9XRbelsVtfHbpJJMj0zzg8aAkO6+/u6uqe7egBSUlJSUlJSUkLEZGG2ZtUvjB9s0aT6zGWYBf8DJgueZvVEM5rfi3psn0HS0aT2/i2+WkjthSRjDEzSpJ5OYMAz0wsdkFTK+cy6ccVXS9nPrIWkIozXaxkghNcgiZTy3iJh/F6HAcOlvLcYkoYwnq0l/qcJjGcgSRiC6cL4pW4DCIsmCzMgKWhSh+sVP+aNcAiSgMlCRrN62bABrN7Y/0LcKbG3qXHxI6VE3kaIO8J4K6gBwliAuGF6ocPkYJ5cxuXi486g4n+a4ONOW5et0/ku0eRhpuSwy+7WhLBbszoihKc1KRbCu5rUOyEsNyt6grdDudrG3Wqbp6t96K70KYddto8tFy553BFsIXNV1Ash3N4a8YTb7O7MvaiGo2VYfG9r0wZoUo9ci2kiEh42HwGMg+6FBI6CYvMRwOphjCPgQdMGlNjbEtc1oETe5qYNsNhUlTB+i41429dWp9fKlFkjhJ9jMPJfS+xtgHYgPi7VrN5GWPx7zWoltJPilSnzI7kwkhoYoskLIQwMwzSbu4vQyN+0SZdQxP9xwdHvWrxmdckUoBNc5fmF8Kir16QQnrJ9ANcIYbcw6hCF21PhHoh93o8DFlKHIWoI48kQI+AERA0hvBOaAYy3IUqYLGTsDizECCiaAiiIClLZIYY0/3+ZsASighDuDt0Axl0QFYTxvIMIOAdRQZO6H7YBmvEeRAFTgE5hFAdTQDvbAo9Fs1rtYPRHSl6tAtdoVvsCzuFP2lf7ban8DmSC2heF+d8XIHyvDFLngtE6zFWYG+hkSepiFAwYaGDEXpcps368uuwzTepVAwYMgGukjnsDe3qrHF2zMLVWfSYLUypH7DoWVrv7BNfo2neG9zThikAfVRHeqBEBz8E1mtXBcUbnoybsaeZKe+TDSuyp1PXvKXWgtWqCZ4WOC+FQdYHTdnEyPsxpWRs+zNGsLoxevdtpJ4THIpEN+i1R6uPSdn7dZeuWHC6zbbWrjZSUlJSUlJQU+F/4AcukCuzzFuWtAAAAAElFTkSuQmCC" class="h-6 inline-block">`
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADV0lEQVR4nO2ay4sTQRDGy03XuIKC+EBFBE+CsCqo6J/g4yCKiiCCi8IKKgjqUVjFuyL4uunuzUBSNSroRSPowYPii0XwDQqeFHxkN9XRbelsVtfHbpJJMj0zzg8aAkO6+/u6uqe7egBSUlJSUlJSUkLEZGG2ZtUvjB9s0aT6zGWYBf8DJgueZvVEM5rfi3psn0HS0aT2/i2+WkjthSRjDEzSpJ5OYMAz0wsdkFTK+cy6ccVXS9nPrIWkIozXaxkghNcgiZTy3iJh/F6HAcOlvLcYkoYwnq0l/qcJjGcgSRiC6cL4pW4DCIsmCzMgKWhSh+sVP+aNcAiSgMlCRrN62bABrN7Y/0LcKbG3qXHxI6VE3kaIO8J4K6gBwliAuGF6ocPkYJ5cxuXi486g4n+a4ONOW5et0/ku0eRhpuSwy+7WhLBbszoihKc1KRbCu5rUOyEsNyt6grdDudrG3Wqbp6t96K70KYddto8tFy553BFsIXNV1Ash3N4a8YTb7O7MvaiGo2VYfG9r0wZoUo9ci2kiEh42HwGMg+6FBI6CYvMRwOphjCPgQdMGlNjbEtc1oETe5qYNsNhUlTB+i41429dWp9fKlFkjhJ9jMPJfS+xtgHYgPi7VrN5GWPx7zWoltJPilSnzI7kwkhoYoskLIQwMwzSbu4vQyN+0SZdQxP9xwdHvWrxmdckUoBNc5fmF8Kir16QQnrJ9ANcIYbcw6hCF21PhHoh93o8DFlKHIWoI48kQI+AERA0hvBOaAYy3IUqYLGTsDizECCiaAiiIClLZIYY0/3+ZsASighDuDt0Axl0QFYTxvIMIOAdRQZO6H7YBmvEeRAFTgE5hFAdTQDvbAo9Fs1rtYPRHSl6tAtdoVvsCzuFP2lf7ban8DmSC2heF+d8XIHyvDFLngtE6zFWYG+hkSepiFAwYaGDEXpcps368uuwzTepVAwYMgGukjnsDe3qrHF2zMLVWfSYLUypH7DoWVrv7BNfo2neG9zThikAfVRHeqBEBz8E1mtXBcUbnoybsaeZKe+TDSuyp1PXvKXWgtWqCZ4WOC+FQdYHTdnEyPsxpWRs+zNGsLoxevdtpJ4THIpEN+i1R6uPSdn7dZeuWHC6zbbWrjZSUlJSUlJQU+F/4AcukCuzzFuWtAAAAAElFTkSuQmCC" class="h-6 inline-block">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAADV0lEQVR4nO2ay4sTQRDGy03XuIKC+EBFBE+CsCqo6J/g4yCKiiCCi8IKKgjqUVjFuyL4uunuzUBSNSroRSPowYPii0XwDQqeFHxkN9XRbelsVtfHbpJJMj0zzg8aAkO6+/u6uqe7egBSUlJSUlJSUkLEZGG2ZtUvjB9s0aT6zGWYBf8DJgueZvVEM5rfi3psn0HS0aT2/i2+WkjthSRjDEzSpJ5OYMAz0wsdkFTK+cy6ccVXS9nPrIWkIozXaxkghNcgiZTy3iJh/F6HAcOlvLcYkoYwnq0l/qcJjGcgSRiC6cL4pW4DCIsmCzMgKWhSh+sVP+aNcAiSgMlCRrN62bABrN7Y/0LcKbG3qXHxI6VE3kaIO8J4K6gBwliAuGF6ocPkYJ5cxuXi486g4n+a4ONOW5et0/ku0eRhpuSwy+7WhLBbszoihKc1KRbCu5rUOyEsNyt6grdDudrG3Wqbp6t96K70KYddto8tFy553BFsIXNV1Ash3N4a8YTb7O7MvaiGo2VYfG9r0wZoUo9ci2kiEh42HwGMg+6FBI6CYvMRwOphjCPgQdMGlNjbEtc1oETe5qYNsNhUlTB+i41429dWp9fKlFkjhJ9jMPJfS+xtgHYgPi7VrN5GWPx7zWoltJPilSnzI7kwkhoYoskLIQwMwzSbu4vQyN+0SZdQxP9xwdHvWrxmdckUoBNc5fmF8Kir16QQnrJ9ANcIYbcw6hCF21PhHoh93o8DFlKHIWoI48kQI+AERA0hvBOaAYy3IUqYLGTsDizECCiaAiiIClLZIYY0/3+ZsASighDuDt0Axl0QFYTxvIMIOAdRQZO6H7YBmvEeRAFTgE5hFAdTQDvbAo9Fs1rtYPRHSl6tAtdoVvsCzuFP2lf7ban8DmSC2heF+d8XIHyvDFLngtE6zFWYG+hkSepiFAwYaGDEXpcps368uuwzTepVAwYMgGukjnsDe3qrHF2zMLVWfSYLUypH7DoWVrv7BNfo2neG9zThikAfVRHeqBEBz8E1mtXBcUbnoybsaeZKe+TDSuyp1PXvKXWgtWqCZ4WOC+FQdYHTdnEyPsxpWRs+zNGsLoxevdtpJ4THIpEN+i1R6uPSdn7dZeuWHC6zbbWrjZSUlJSUlJQU+F/4AcukCuzzFuWtAAAAAElFTkSuQmCC" class="h-6 inline-block">
+      </div>
+      <div class="absolute bg-[red] bottom-0 w-[100%] h-12 rounded-b-2xl cursor-pointer" >
+        <p class="text-white font-cartoon text-[30px] font-bold redirect" data-redirect="2">In winkelwagentje</p>
+      </div>
+    </div>
+    
+  </div>
+<footer
+class="flex relative bg-black w-[100%] h-[550px] sm:h-[200px] justify-center object-cover items-center"
+>
+<div class="flex absolute w-[100%] h-[90%]">
+  <div>
+    <img
+      src="/logo/logo.png"
+      class="absolute w-[150px] h-[150px] left-32 sm:left-10 sm:top-[-30px]"
+    />
+  </div>
+  <div>
+    <nav class="absolute top-36 left-0 sm:top-10 sm:left-[0%]">
+      <ul>
+        <li class="block mt-0 sm:inline-block">
+          <a href="/index.html">Home</a>
+        </li>
+        <li class="block mt-4 sm:inline-block">
+          <a href="courses.html">Cursussen</a>
+        </li>
+        <li class="block mt-4 sm:inline-block">
+          <a href="/BMI.html">Prijzen</a>
+        </li>
+        <li class="block mt-4 sm:inline-block"><a href="about.html">Over</a></li>
+      </ul>
+    </nav>
+    <div>
+      <p
+      class="text-white font absolute left-16 top-[490px] sm:top-36 sm:left-[42vw]"
+    >
+      &#169; FastFit B.V.
+| Alle Rechten Voorbehouden
+    </p>
+    </div>
+  </div>
+  <div
+    class="w-[250px] h-[50px] justify-center items-center absolute top-[320px] left-20 sm:left-[80%] sm:top-10"
+  >
+  <a href="https://twitter.com/home" target="_blank" class="pointer-events-auto">
+    <button class="rounded-[50%] blue h-[50px] w-[50px] cursor-pointer">
+      <img src="/icons/twitter (1).png" class="h-[100%] w-[100 %]" />
+    </button>
+  </a>
+  <a href="https://www.instagram.com" target="_blank" class="pointer-events-auto">
+    <button
+      class="rounded-[50%] pink h-[50px] w-[50px] ml-12 cursor-pointer"
+    >
+      <img src="/icons/instagram-logo.png" class="h-[100%] w-[100 %]" />
+    </button>
+  </a>
+  <a href="https://www.facebook.com" target="_blank" class="pointer-events-auto">
+    <button class="rounded-[50%] h-[50px] w-[50px] ml-10 cursor-pointer">
+      <img src="/icons/facebook.png" class="h-[100%] w-[100 %]" />
+    </button>
+  </a>
+  </div>
+  <div>
+    <p
+      class="absolute font top-[400px] text-center text-white left-16 text-sm sm:left-12 sm:top-28 sm:text-xs sm:text-left"
+    >
+      Bedrijfsnaam: FastFit B.V. <br />
+      E-mail: FastFit@nlservices.nl <br />
+      Telefoonnummer: +31 6 12345678 <br />
+      Adres: 123 Keizersgracht, Amsterdam, Nederland
+    </p>
+  </div>
+</div>
+</footer>
+
+  <script src="/scripts/productsPage.js" type="module"></script>
+  <script src="/scripts/hamburgerMenu.js"></script>
+</body>
+</html>

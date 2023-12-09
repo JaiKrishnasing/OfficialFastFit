@@ -1,0 +1,119 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  height: auto;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+.button {
+  padding: 16px 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  background-color: red;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+.purchase-container {
+  position: relative;
+  height: 1000px;
+  width: 100%;
+}
+
+.content {
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  margin-top: 100px;
+  height: 400px;
+  width: 360px;
+}
+
+.purchase-img {
+  position: relative;
+  margin-left: 20px;
+}
+
+.purchase-header {
+  position: absolute;
+  left: 80px;
+  white-space: nowrap;
+  top: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 2;
+  font-family: "Roboto", sans-serif;
+}
+
+.purchase-confirmation-text {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  white-space: nowrap;
+  font-family: "Roboto", sans-serif;
+}
+
+.purchase-confirmation-email {
+  font-family: "Roboto", sans-serif;
+  top: 100px;
+  font-weight: bold;
+  position: absolute;
+  left: 20px;
+}
+
+.purchase-ordernumber-text {
+  font-family: "Roboto", sans-serif;
+  top: 140px;
+  position: absolute;
+  left: 20px;
+}
+
+.red {
+  color: red;
+}
+
+.purchase-ordernumber {
+  font-family: "Roboto", sans-serif;
+  top: 170px;
+  font-weight: bold;
+  position: absolute;
+  left: 20px;
+}
+
+.purchase-delivery-text {
+  font-family: "Roboto", sans-serif;
+  top: 210px;
+  position: absolute;
+  left: 20px;
+}
+
+.purchase-delivery {
+  font-family: "Roboto", sans-serif;
+  top: 240px;
+  white-space: nowrap;
+  font-weight: bold;
+  position: absolute;
+  left: 20px;
+}
+
+.purchase-redirect-text {
+  font-family: "Roboto", sans-serif;
+  top: 300px;
+  position: absolute;
+  left: 20px;
+}

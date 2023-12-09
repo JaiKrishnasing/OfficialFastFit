@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>FastFit - Prijzen</title>
+    <link rel="icon" href="/icons/logo icon.png" type="image/png" />
+    <link rel="stylesheet" href="/styles/BMI.css" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="/styles/animation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inclusive+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inclusive+Sans&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="hamburger-menu-container" id="hamburger-menu-container-js">
+      <div class="content" id="content-js">
+        <div>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACAUlEQVR4nO2avUoDURCFD1roQgoRxVrQB1DQFJYKRtCXMD6E8QWSWBhLY6+NFvoCxkL7IGIKK0EQLCKKjTF6JLDFEpLs3L0/uy4ZmC5zTiZ8u3cyu8AwhuEuCNQIcEC+Echa8M362oO8ayqC9RCxTj4SyBhsIuNrhvnWVUQXCbQEolWDjRwL/NoEllWFSwLhTm4ZaCJH4FfgVYwiPkbgXiD+SmBGo4lpAi8CnwaBcZ2Lry0wudRo5Fyg/0NgJaqHKmL5CNo7Qu2iVhOKiH0SmFfQnSXwYRUpDcRuCYwK9EYIXDtBSgOxgkBrzxlSGoh9E1gaoLNA4MspUhqIPRDw+vwYd7Eg1R0EykIsKj1qD4W1JdgOBcQ6J/VGoG5NeHo3rCGlgdgzgUkCEwSeEoGUBmKnfko+W4brUEBMmu6Q0kAseUhpIBbvXcoBYvEhZRCx+JEyhFj8SHUHgf0Ijbi/3aYeLZq52L3/ihQThRjTcCDSzojiJRmpk8QOjUzDGE+1P1a5QN2q/0WTgRjlSB30qK0kAjGmYflAOVItg+sgL86hcFegVYhlqKQcqZvErkyptsSeU1xivztDjHKktiNo550gRjlSFxoeZ1YRo7tHb1MKj948m0htRm0i4LUuXKeWbCF1pNtEwLNqHLE0vTBQCxFrWnyFoxnifWXadxjDQP/4A7Gb6LvtoO+EAAAAAElFTkSuQmCC"
+            class="close-button"
+            id="close-button-js"
+          />
+        </div>
+        <div class="hamburger-container-text">
+          <a class="hamburger-links" href="/index.html">Home</a>
+          <a class="hamburger-links" href="shop.html">Shop</a>
+          <a class="hamburger-links" href="courses.html">Cursussen</a>
+          <a class="hamburger-links" href="about.html">Over</a>
+        </div>
+      </div>
+    </div>
+    <div class="landing-page-container">
+      <div class="landing-page-header-content">
+        <div>
+          <img
+            src="/logo/logo.png"
+            class="landing-page-header-logo"
+            id="landing-page-header-logo-js"
+          />
+        </div>
+        <nav id="nav-js">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="courses.html">Cursussen</a></li>
+            <li><a href="about.html">Over</a></li>
+          </ul>
+        </nav>
+        <div>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA9ElEQVR4nO2SMWpCQRiEv9hY2RiwUTu1sPcKdum8imnNIbyEPKyiEEIuYWMj6SwV1HSmmLAwBgm+F8UVmzcwzTD/zO7+CzliQFATJIKdORY0Y4avBfrDoFVjFCQOfA2B5sTaKEbBzmG/pxXUrW1iFGwdVrtVwdhhE+8jcGotiVHQEqxSlty4uiDAix35ubZefJzwHKkQFAQdwYvgQzAXfJlzawN7CpcEFwXPguWJn5PG4O2H2f/CK4LZ0eCnYCh4ErQFJbNtbWjPwR9mK1kF7zaGJ+ieeeMHQU+w8OxblvnbpvI54ccQPHp2n2VSDHK3ghycwA9Tdgg9Jiu7DAAAAABJRU5ErkJggg=="
+            class="icon" id="icon-js"
+          />
+        </div>
+        <div>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAUklEQVR4nO3WwQkAMAzDQI3ezd0xAkIH+jf0Y0iSXBg8QwxmiOsHdAjiH3mGSJIkNON3va1mHo0zhOmQZ4gkSUIzftfbaubROEOYDnmGSJJw4AMYm2x/criEYgAAAABJRU5ErkJggg=="
+            class="hamburger-icon"
+            id="hamburger-icon-js"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="relative w-[100%] h-[2800px] sm:h-[1200px] price-container flex justify-center object-cover">
+      <div class="absolute grid grid-cols-1 md:grid-cols-3 scale-90 sm:scale-100 h-[80%] w-[100%]">
+            <div
+              class="bg-white w-[400px] h-[600px] mt-36 justify-center text-left rounded-lg shadow-2xl relative"
+            >
+              <div
+                class="absolute h-[200px] w-[400px] t-0 overflow-hidden grayscale transition duration-300 hover:grayscale-0"
+              >
+                <img src="/images/kettlebell workout.jpg" class="rounded-lg" />
+                <div
+                  class="absolute bg-white text-[20px] font-bold h-[70px] w-[15rem] text-center py-6 text-[red] bottom-[-15px] left-0 right-0 mx-auto"
+                >
+                  Basispakket
+                </div>
+              </div>
+              <div
+                class="text-black text-5xl font tracking-[2px] relative top-[230px] left-9 font-extrabold"
+              >
+                &euro; 19.99,- /<span class="text-gray-500 text-base">maand</span>
+              </div>
+              <div class="w-[350px] h-5 relative left-2 mb-8 top-64">
+                <img
+                  src="/icons/icons8-done-50.png"
+                  class="h-5 w-5 bg-gray-200 absolute left-0 rounded-xl"
+                />
+                <p class="text-black absolute left-8 -top-[3.5px] text-base">
+                  Toegang tot één specifieke cursus
+                </p>
+              </div>
+              <div class="w-[350px] h-5 relative left-2 mb-8 top-64">
+                <img
+                  src="/icons/icons8-done-50.png"
+                  class="h-5 w-5 bg-gray-200 absolute left-0 rounded-xl"
+                />
+                <p class="text-black absolute left-8 -top-[3.5px] text-base">
+                  Gratis FastFit shirt
+                </p>
+              </div>
+              <div class="w-[350px] h-5 relative left-2 top-64">
+                <img
+                  src="/icons/icons8-infinite-32.png"
+                  class="h-5 w-5 bg-gray-200 absolute left-0 rounded-xl mb-8"
+                />
+                <p class="text-black absolute left-8 -top-[3.5px] text-base">
+                  Onbeperkt toegang tot online leermateriaal.
+                </p>
+              </div>
+              <div>
+                <div class="relative top-72 left-12 h-[50px] w-[250px] border-2 border-solid border-[red] button-animation" id="button-animation-js" data-animation="1"></div>
+                <div>
+                  <button
+                    class="relative left-8 top-64 p-3 bg-[red] text-white font font-bold px-[50px] text-xl whitespace-nowrap buttonCourse" data-button="1"
+                  >
+                    Neem Contact Op &#x2192
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+            class="bg-white w-[400px] h-[850px] mt-36 justify-center text-left rounded-lg shadow-2xl  border-2 border-solid border-red-600 relative sm:mt-36"
+          >
+            <div
+              class="absolute h-[200px] w-[396px] t-0 overflow-hidden grayscale transition duration-300 hover:grayscale-0"
+            >
+              <img src="/images/about-img-3.jpg" class="rounded-lg" />
+              <div
+                class="absolute bg-white text-[20px] font-bold h-[70px] w-[15rem] text-center py-6 text-[red] bottom-[-15px] left-0 right-0 mx-auto"
+              >
+              Premium Pakket
+              </div>
+            </div>
+            <div
+              class="text-black text-5xl font tracking-[2px] relative top-[230px] left-9 font-extrabold"
+            >
+              &euro; 79.99,- /<span class="text-gray-500 text-base">maand</span>
+            </div>
+            <div class="w-[350px] h-5 relative left-2 mb-8 top-64">
+              <img
+                src="/icons/icons8-done-50.png"
+                class="h-5 w-5 bg-gray-200 absolute left-0 rounded-xl"
+              />
+              <p class="text-black absolute left-8 -top-[3.5px] text-base">
+                Gratis FastFit drinkfles
+              </p>
+            </div>
+            <div class="w-[350px] h-5 relative left-2 mb-8 top-64">
+              <img
+                src="/icons/icons8-done-50.png"
+                class="h-5 w-5 bg-gray-200 absolute left-0 rounded-xl"
+              />
+              <p class="text-black absolute left-8 -top-[3.5px] text-base">
+                Gratis FastFit shirt
+              </p>
+            </div>
+            <div class="w-[350px] h-5 relative left-2 mb-8 top-64">
+              <img
+                src="/icons/icons8-done-50.png"
+                class="h-5 w-5 bg-gray-200 absolute left-0 rounded-xl"
+              />
+              <p class="text-black absolute left-8 -top-[3.5px] text-base">
+                Persoonlijke begeleiding van instructeurs
+              </p>
+            </div>
+            <div class="w-[350px] h-5 relative left-2 mb-8 top-64">
+              <img
+                src="/icons/icons8-done-50.png"
+                class="h-5 w-5 bg-gray-200 absolute left-0 rounded-xl"
+              />
+              <p class="text-black absolute left-8 -top-[3.5px] text-base">
+                Exclusieve toegang tot trainingssessies
+              </p>
+            </div>
+            <div class="w-[350px] h-5 relative left-2 mb-8 top-64">
+              <img
+                src="/icons/icons8-done-50.png"
+                class="h-5 w-5 bg-gray-200 absolute left-0 rounded-xl"
+              />
+              <p class="text-black absolute left-8 -top-[3.5px] text-base">
+                Neem altijd iemand mee
+              </p>
+            </div>
+            <div class="w-[350px] h-5 relative left-2 top-64 mb-8">
+              <img
+                src="/icons/icons8-infinite-32.png"
+                class="h-5 w-5 bg-gray-200 absolute left-0 rounded-xl mb-8"
+              />
+              <p class="text-black absolute left-8 -top-[3.5px] text-base">
+                Onbeperkt toegang tot online leermateriaal.
+              </p>
+            </div>
+            <div class="w-[350px] h-5 relative left-2 top-64 mb-8">
+              <img
+                src="/icons/icons8-infinite-32.png"
+                class="h-5 w-5 bg-gray-200 absolute left-0 rounded-xl mb-8"
+              />
+              <p class="text-black absolute left-8 -top-[3.5px] text-base">
+                Onbeperkt toegang tot alle cursussen
+              </p>
+            </div>
+            <div class="w-[350px] h-5 relative left-2 top-64 mb-8">
+              <img
+                src="/icons/icons8-infinite-32.png"
+                class="h-5 w-5 bg-gray-200 absolute left-0 rounded-xl mb-8"
+              />
+              <p class="text-black absolute left-8 -top-[3.5px] text-base">
+                Onbeperkt toegang tot coachingssessies
+              </p>
+            </div>
+            <div>
+              <div class="relative top-64 left-12 h-[50px] w-[250px] border-2 border-solid border-[red] button-animation" id="button-animation-js" data-animation="2"></div>
+              <div>
+                <button
+                  class="relative left-8 top-56 p-3 bg-[red] text-white font font-bold px-[50px] text-xl whitespace-nowrap buttonCourse" data-button="2"
+                >
+                  Neem Contact Op &#x2192
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+          class="bg-white w-[400px] h-[750px] mt-36 justify-center text-left rounded-lg shadow-2xl relative"
+        >
+          <div
+            class="absolute h-[200px] w-[400px] t-0 overflow-hidden grayscale transition duration-300 hover:grayscale-0"
+          >
+            <img src="/images/kickboxing.jpg" class="rounded-lg" />
+            <div
+              class="absolute bg-white text-[20px] font-bold h-[70px] w-[15rem] text-center py-6 text-[red] bottom-[-15px] left-0 right-0 mx-auto"
+            >
+            Standaardpakket
+            </div>
+          </div>
+          <div
+            class="text-black text-5xl font tracking-[2px] relative top-[230px] left-9 font-extrabold"
+          >
+            &euro; 49.99,- /<span class="text-gray-500 text-base">maand</span>
+          </div>
+          <div class="w-[350px] h-5 relative left-2 mb-14 top-64">
+            <img
+              src="/icons/icons8-done-50.png"
+              class="h-5 w-5 bg-gray-200 absolute left-0 rounded-xl"
+            />
+            <p class="text-black absolute left-8 -top-[3.5px] text-base">
+              Toegang tot twee of drie specifieke cursussen
+            </p>
+          </div>
+          <div class="w-[350px] h-5 relative left-2 mb-8 top-64">
+            <img
+              src="/icons/icons8-done-50.png"
+              class="h-5 w-5 bg-gray-200 absolute left-0 rounded-xl"
+            />
+            <p class="text-black absolute left-8 -top-[3.5px] text-base">
+              Gratis FastFit drinkfles
+            </p>
+          </div>
+          <div class="w-[350px] h-5 relative left-2 mb-8 top-64">
+            <img
+              src="/icons/icons8-done-50.png"
+              class="h-5 w-5 bg-gray-200 absolute left-0 rounded-xl"
+            />
+            <p class="text-black absolute left-8 -top-[3.5px] text-base">
+              Gratis FastFit shirt
+            </p>
+          </div>
+          <div class="w-[350px] h-5 relative left-2 mb-8 top-64">
+            <img
+              src="/icons/icons8-done-50.png"
+              class="h-5 w-5 bg-gray-200 absolute left-0 rounded-xl"
+            />
+            <p class="text-black absolute left-8 -top-[3.5px] text-base">
+              Neem altijd iemand mee
+            </p>
+          </div>
+          <div class="w-[350px] h-5 relative left-2 mb-8 top-64">
+            <img
+              src="/icons/icons8-infinite-32.png"
+              class="h-5 w-5 bg-gray-200 absolute left-0 rounded-xl mb-8"
+            />
+            <p class="text-black absolute left-8 -top-[3.5px] text-base">
+              Onbeperkt toegang tot online leermateriaal.
+            </p>
+          </div>
+          <div class="w-[350px] h-5 relative left-2 top-64">
+            <img
+              src="/icons/icons8-infinite-32.png"
+              class="h-5 w-5 bg-gray-200 absolute left-0 rounded-xl mb-8"
+            />
+            <p class="text-black absolute left-8 -top-[3.5px] text-base">
+              Onbeperkt toegang tot coachingssessies.
+            </p>
+          </div>
+          <div>
+            <div class="relative top-72 left-12 h-[50px] w-[250px] border-2 border-solid border-[red] button-animation" id="button-animation-js" data-animation="3"></div>
+            <div>
+              <button
+                class="relative left-8 top-64 p-3 bg-[red] text-white font font-bold px-[50px] text-xl whitespace-nowrap buttonCourse" data-button="3"
+              >
+                Neem Contact Op &#x2192
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+    class="flex relative bg-black w-[100%] h-[550px] sm:h-[200px] justify-center object-cover items-center"
+  >
+    <div class="flex absolute w-[100%] h-[90%]">
+      <div>
+        <img
+          src="/logo/logo.png"
+          class="absolute w-[150px] h-[150px] left-32 sm:left-10 sm:top-[-30px]"
+        />
+      </div>
+      <div>
+        <nav class="absolute top-36 left-44 sm:top-10 sm:left-[40%]">
+          <ul>
+            <li class="block mt-0 sm:inline-block">
+              <a href="/index.html">Home</a>
+            </li>
+            <li class="block mt-4 sm:inline-block">
+              <a href="shop.html">Shop</a>
+            </li>
+            <li class="block mt-4 sm:inline-block">
+              <a href="courses.html">Cursussen</a>
+            </li>
+            <li class="block mt-4 sm:inline-block"><a href="about.html">Over</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p
+            class="text-white font absolute left-16 top-[490px] sm:top-36 sm:left-[43vw]"
+          >
+            &#169; FastFit B.V.
+ | Alle Rechten
+            Voorbehouden
+          </p>
+        </div>
+      </div>
+      <div
+        class="w-[250px] h-[50px] justify-center items-center absolute top-[320px] left-20 sm:left-[80%] sm:top-10"
+      >
+      <a href="https://twitter.com/home" target="_blank" class="pointer-events-auto">
+        <button class="rounded-[50%] blue h-[50px] w-[50px] cursor-pointer">
+          <img src="/icons/twitter (1).png" class="h-[100%] w-[100 %]" />
+        </button>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" class="pointer-events-auto">
+        <button
+          class="rounded-[50%] pink h-[50px] w-[50px] ml-12 cursor-pointer"
+        >
+          <img src="/icons/instagram-logo.png" class="h-[100%] w-[100 %]" />
+        </button>
+      </a>
+      <a href="https://www.facebook.com" target="_blank" class="pointer-events-auto">
+        <button class="rounded-[50%] h-[50px] w-[50px] ml-10 cursor-pointer">
+          <img src="/icons/facebook.png" class="h-[100%] w-[100 %]" />
+        </button>
+      </a>
+      </div>
+      <div>
+        <p
+          class="absolute font top-[400px] text-center text-white left-16 text-sm sm:left-12 sm:top-28 sm:text-xs sm:text-left"
+        >
+          Bedrijfsnaam: FastFit B.V. <br />
+          E-mail: FastFit@nlservices.nl <br />
+          Telefoonnummer: +31 6 12345678 <br />
+          Adres: 123 Keizersgracht, Amsterdam, Nederland
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+    <script src="/scripts/pricing.js"></script>
+    <script src="/scripts/hamburgerMenu.js"></script>
+  </body>
+</html>

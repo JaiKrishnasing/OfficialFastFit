@@ -1,0 +1,166 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  height: 100%;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+.button {
+  padding: 10px 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: red;
+}
+
+.login-container {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.logscreen-header-text {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  white-space: nowrap;
+  margin-top: -50px;
+}
+
+.toggle-password-button {
+  position: absolute;
+  height: 1.25rem;
+  width: 1.25rem;
+  margin-top: 3rem;
+  margin-left: -2rem;
+  cursor: pointer;
+  visibility: visible;
+}
+
+.radiobutton {
+  margin-top: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.radiobutton:nth-child(1) {
+  margin-left: -120px;
+}
+
+.login-screen-img-container {
+  background-color: red;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  justify-content: flex-end;
+}
+
+@media (min-width: 640px) {
+  .login-screen-img-container {
+    width: 50%;
+  }
+}
+
+.login-screen-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.switch {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  border-bottom: 2px solid red;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: -30px;
+}
+
+.not-active {
+  border: none;
+  cursor: pointer;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.img-content {
+  height: 15rem;
+  width: 15rem;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.input-content {
+  margin-left: -0.75rem;
+  margin-bottom: 2rem;
+  outline: none;
+  border-bottom-width: 2px;
+  border-style: solid;
+  border-color: #ed1c24;
+  margin-top: 2rem;
+  background-color: transparent;
+  color: white;
+  padding-right: 8rem;
+  padding-top: 0.75rem;
+  padding-left: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.red {
+  color: #ed1c24;
+}
+
+.sm-text {
+  font-size: 0.875rem;
+}
+
+.tos-container {
+  width: 300px;
+  text-align: left;
+}
+
+.tos-description {
+  color: gray;
+  font-size: 10px;
+  margin-top: 0.75rem;
+  margin-left: -0.75rem;
+}
+
+.checkbox {
+  margin-left: -16rem;
+  margin-top: 1.5rem;
+}
+
+.login {
+  background-color: #fff;
+  margin-left: -6rem;
+  margin-top: 2.5rem;
+}

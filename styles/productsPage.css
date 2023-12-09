@@ -1,0 +1,608 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  user-select: none;
+}
+
+img {
+  pointer-events: none;
+}
+
+body {
+  height: auto;
+  overflow-x: hidden;
+  background-image: url(../images/products\ background.jpg);
+  user-select: none;
+  transition: background-color 1s ease-in-out;
+}
+
+::-webkit-scrollbar {
+  background-color: red;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
+.hamburger-menu-container {
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  width: 100%;
+  visibility: hidden;
+  background-color: white;
+}
+
+.close-button {
+  position: absolute;
+  top: 5vh;
+  right: 5vw;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.hamburger-container-text {
+  position: absolute;
+  left: 45vw;
+  top: 20vh;
+}
+
+.hamburger-links {
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  margin-bottom: 4vh;
+  transition: color 0.4s;
+}
+
+.hamburger-links:hover {
+  color: red;
+}
+
+.landing-page-container {
+  position: relative;
+  text-align: center;
+}
+
+.landing-page-header-content {
+  z-index: 10;
+  position: fixed;
+  background-color: black;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: 14vh;
+  width: 100%;
+}
+
+.landing-page-header-logo {
+  z-index: 10;
+  top: -1vh;
+  left: 1vw;
+  height: 100px;
+  width: 200px;
+  display: flex;
+  position: absolute;
+  object-fit: cover;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  top: 4.5vh;
+  z-index: 22;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  display: inline-block;
+  margin-left: 3vw;
+}
+
+nav ul li a {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: color 0.4s;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+
+.icon {
+  position: absolute;
+  top: 4.5vh;
+  z-index: 22;
+  right: 3vw;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.cart {
+  display: flex;
+  position: absolute;
+  top: 4vh;
+  height: 30px;
+  width: 30px;
+  right: 9vw;
+}
+
+.active {
+  visibility: hidden;
+}
+
+.hamburger-icon {
+  position: absolute;
+  margin-right: 10px;
+  cursor: pointer;
+  z-index: 22;
+  top: 4.8vh;
+  right: 5.5vw;
+  height: 20px;
+  width: 20px;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.checkout-container {
+  display: flex;
+  border: 1px solid black;
+  position: relative;
+  background-color: white;
+  height: 785px;
+  width: 450px;
+  scale: 0.9;
+  margin-top: 100px;
+  margin-bottom: 5px;
+  margin-left: -10px;
+  object-fit: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .checkout-container {
+    scale: 1;
+    margin-bottom: 0px;
+    margin-top: -600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.checkout-content {
+  position: absolute;
+  visibility: hidden;
+  top: 10px;
+  left: 10px;
+  height: 630px;
+  width: 96%;
+}
+
+.waiting-for-checkout-content {
+  position: absolute;
+  top: 140px;
+  left: 10px;
+  height: 630px;
+  width: 96%;
+}
+
+.waiting-checkout-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  position: absolute;
+  font-weight: bold;
+  bottom: 200px;
+  left: 90px;
+}
+
+.waiting-checkout-description {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  position: absolute;
+  bottom: 170px;
+  left: 50px;
+}
+
+.waiting-checkout-img {
+  height: 400px;
+  width: 400px;
+  background-size: contain;
+  position: absolute;
+  left: 20px;
+}
+
+.checkout-costs-container {
+  border-top: 1px solid black;
+  height: 178px;
+  width: 90%;
+}
+
+.checkout-costs-content {
+  position: relative;
+  height: 178px;
+  width: 100%;
+}
+
+.checkout-header {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  left: 20px;
+  top: 20px;
+  position: absolute;
+  text-align: left;
+}
+
+.items {
+  position: relative;
+  margin-bottom: 50px;
+  height: 100px;
+  width: 100%;
+}
+
+.item-img {
+  left: 0;
+  top: 10px;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-size: contain;
+}
+
+.item-text {
+  left: 120px;
+  top: 10px;
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.item-price {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.button-container {
+  position: absolute;
+  right: 10px;
+  top: 40px;
+}
+
+.item-button {
+  background-color: rgb(172, 172, 172);
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.item-amount {
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+}
+
+.item-cost-container {
+  position: absolute;
+  top: 10px;
+  text-align: left;
+  left: 0;
+}
+
+.costs {
+  position: absolute;
+  right: -270px;
+}
+
+.checkout-button {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  color: white;
+  background-color: red;
+  border: none;
+  left: 100px;
+  bottom: -50px;
+  white-space: nowrap;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.cost-title {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 5px;
+}
+
+.total {
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.item-description {
+  position: absolute;
+  left: 120px;
+  top: 40px;
+  font-size: 12px;
+  text-align: left;
+  width: 150px;
+}
+
+.item-container {
+  height: 350px;
+  margin-top: 100px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.products-container {
+  display: flex;
+  position: relative;
+  background-image: url(../images/products\ background.jpg);
+  height: 70vh;
+  object-fit: contain;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 660px) {
+  .product-intro-title {
+    font-size: 50px;
+  }
+}
+
+.product-display-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: -150px;
+  height: 70vh;
+  width: 90%;
+}
+
+.product-grid {
+  display: grid;
+  position: relative;
+  transform: scale(1.1);
+  margin-left: 0;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  width: 100%;
+  height: 100%;
+}
+
+.font {
+  font-family: "Roboto", sans-serif;
+}
+
+.font-cartoon {
+  font-family: "Caveat Brush", cursive;
+}
+
+@media (min-width: 640px) {
+  .product-grid {
+    margin-top: 100px;
+    transform: scale(1.1);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (640px <= width <= 1500px) {
+  .product-grid {
+    transform: scale(0.9);
+    margin-left: -50px;
+  }
+
+  .checkout-container {
+    transform: scale(0.6);
+  }
+}
+
+.checkout-container {
+  transform: scale(0.9);
+  margin-right: -23px;
+}
+
+.product-display {
+  background-color: black;
+  height: 450px;
+  margin-top: 80px;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 8%;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.45);
+}
+
+.product-img {
+  height: 175px;
+  width: 175px;
+  margin-top: 25px;
+}
+
+.product-display-title {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.product-display-description-container {
+  width: 205px;
+  height: 30px;
+}
+
+.product-display-description {
+  color: grey;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 13px;
+  width: 205px;
+  margin-top: 10px;
+}
+
+.product-display-price {
+  color: red;
+  font-family: "Roboto", sans-serif;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.stars-container {
+  margin-top: 15px;
+  width: 200px;
+  height: 2vh;
+}
+
+.star {
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+}
+
+.redirect-container {
+  background-color: red;
+  margin-top: 35px;
+  height: 5vh;
+  width: 300px;
+  border-bottom-left-radius: 28px;
+  border-bottom-right-radius: 28px;
+}
+
+.redirect {
+  white-space: nowrap;
+  color: white;
+  font-family: "Caveat Brush", cursive;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.product-container-title {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: -1vh;
+  height: 10vh;
+  width: 100%;
+}
+
+.product-title {
+  position: absolute;
+  display: flex;
+  color: black;
+  font-family: "Caveat Brush", cursive;
+  font-size: 80px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.footer-container {
+  display: flex;
+  position: relative;
+  height: 26vh;
+  background-color: black;
+  object-fit: contain;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-top {
+  position: absolute;
+  top: 0;
+  height: 40%;
+  width: 100%;
+}
+
+.footer-logo {
+  position: absolute;
+  top: -5vh;
+  left: 100px;
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+}
+
+.social-media-links {
+  display: flex;
+  width: 200px;
+  height: 5vh;
+  position: absolute;
+  top: 28px;
+  right: 20px;
+}
+
+.button-img {
+  height: 100%;
+  width: auto;
+}
+
+.footer-button {
+  justify-content: center;
+  padding: 10px;
+  border-radius: 50%;
+  border-style: solid;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  margin-right: 15px;
+}
+
+.blue {
+  background-color: rgb(80, 171, 241);
+}
+
+.pink {
+  background-color: rgb(255, 116, 181);
+}
+
+.darkblue {
+  background-color: rgb(24, 119, 242);
+}
+
+.footer-hyperlink {
+  position: absolute;
+}
+
+.footer-bottom {
+  position: absolute;
+  left: 100px;
+  top: 40%;
+  height: 140px;
+  width: 200px;
+}
+
+.information {
+  position: absolute;
+  top: 100px;
+  left: 110px;
+  color: grey;
+  margin-top: 10px;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  width: 200px;
+}

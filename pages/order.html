@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FastFit - Bestelling</title>
+    <link rel="icon" href="/icons/logo icon.png" type="image/png" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="/styles/order.css" />
+    <link rel="stylesheet" href="/styles/animation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inclusive+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inclusive+Sans&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="purchase-container">
+      <div class="content">
+        <div>
+          <img src="/images/icons8-checkmark.gif" class="purchase-img" />
+          <h1 class="purchase-header">Bedankt voor uw bestelling</h1>
+        </div>
+        <div>
+          <p class="purchase-confirmation-text">
+            Wij hebben een orderbevestiging gestuurd naar:
+          </p>
+          <p
+            class="purchase-confirmation-email"
+            id="purchase-confirmation-email-js"
+          ></p>
+        </div>
+        <div>
+          <p class="purchase-ordernumber-text">Uw bestelnummer is:</p>
+          <p class="purchase-ordernumber" id="purchase-ordernumber-js"></p>
+        </div>
+        <div>
+          <p class="purchase-delivery-text">Uw bestelling wordt bezorgd:</p>
+          <p class="purchase-delivery" id="purchase-delivery-js"></p>
+        </div>
+        <div>
+          <p class="purchase-redirect-text">
+            U wordt binnen
+            <span class="red" id="countdown-js">10</span> seconden doorgestuurd
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="/scripts/order.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  user-select: none;
+}
+
+img {
+  pointer-events: none;
+}
+
+body {
+  height: auto;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  background-color: red;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+.font {
+  font-family: "Roboto", sans-serif;
+}
+
+.dropdown {
+  background-color: red;
+  height: 2.5rem;
+  width: 7rem;
+  border-radius: 9999px;
+  position: absolute;
+  right: -2%;
+  top: 6rem;
+  z-index: 2;
+  visibility: hidden;
+}
+
+.user-interface {
+  height: 1000px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}

@@ -1,0 +1,264 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  user-select: none;
+}
+
+img {
+  pointer-events: none;
+}
+
+body {
+  height: auto;
+  overflow-x: hidden;
+  user-select: none;
+  transition: background-color 1s ease-in-out;
+}
+
+::-webkit-scrollbar {
+  background-color: red;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
+.hamburger-menu-container {
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  width: 100%;
+  visibility: hidden;
+  background-color: white;
+}
+
+.close-button {
+  position: absolute;
+  top: 5vh;
+  right: 5vw;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.hamburger-container-text {
+  position: absolute;
+  left: 45vw;
+  top: 20vh;
+}
+
+.hamburger-links {
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  margin-bottom: 4vh;
+  transition: color 0.4s;
+}
+
+.hamburger-links:hover {
+  color: red;
+}
+
+.landing-page-container {
+  position: relative;
+  text-align: center;
+}
+
+.landing-page-header-content {
+  z-index: 10;
+  position: fixed;
+  background-color: black;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: 14vh;
+  width: 100%;
+}
+
+.landing-page-header-logo {
+  z-index: 10;
+  top: -1vh;
+  left: 1vw;
+  height: 100px;
+  width: 200px;
+  display: flex;
+  position: absolute;
+  object-fit: cover;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  top: 4.5vh;
+  z-index: 22;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  display: inline-block;
+  margin-left: 3vw;
+}
+
+nav ul li a {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: color 0.4s;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+
+.icon {
+  display: flex;
+  z-index: 22;
+  position: absolute;
+  top: 4.5vh;
+  right: 3vw;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.active {
+  visibility: hidden;
+}
+
+.hamburger-icon {
+  position: absolute;
+  margin-right: 10px;
+  cursor: pointer;
+  z-index: 22;
+  top: 4.8vh;
+  right: 5.5vw;
+  height: 20px;
+  width: 20px;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.font {
+  font-family: "Roboto", sans-serif;
+}
+
+.font-cartoon {
+  font-family: "Caveat Brush", cursive;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.item-container {
+  position: absolute;
+  left: 1.25rem;
+  overflow: auto;
+  top: 30vh;
+  height: 65%;
+  width: 95%;
+}
+
+.item-content {
+  position: relative;
+}
+
+.item {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 2.5rem;
+  border-bottom-width: 2px;
+  border-color: rgb(229, 231, 235);
+}
+
+.item-img {
+  object-fit: contain;
+  height: 120px;
+  width: 120px;
+  top: 1rem;
+  position: absolute;
+  left: 0;
+}
+
+.item-name-top {
+  color: gray;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  font-weight: bold;
+  font-size: small;
+  top: 40px;
+  letter-spacing: 0.1rem;
+  left: 130px;
+  display: block;
+}
+
+.item-name-bottom {
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  font-weight: bold;
+  font-size: small;
+  top: 70px;
+  letter-spacing: 0.1rem;
+  left: 130px;
+  display: block;
+}
+
+.item-price {
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  top: 60px;
+  right: 10%;
+  white-space: nowrap;
+}
+
+.item-remove-icon {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  cursor: pointer;
+}
+
+.summary-container {
+  background-color: rgb(234, 232, 232);
+}
+
+.checkout-button {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  color: white;
+  background-color: red;
+  border: none;
+  top: 30vh;
+  white-space: nowrap;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.blue {
+  background-color: rgb(80, 171, 241);
+}
+
+.pink {
+  background-color: rgb(255, 116, 181);
+}
+
+.input:focus {
+  border: 2px solid red;
+  outline: none;
+}
+
+.darkblue {
+  background-color: rgb(24, 119, 242);
+}

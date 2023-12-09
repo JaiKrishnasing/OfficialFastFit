@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FastFit - Inloggen</title>
+    <link rel="icon" href="/icons/logo icon.png" type="image/png" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="/styles/login.css" />
+    <link rel="stylesheet" href="/styles/animation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inclusive+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Inclusive+Sans&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="w-[100%] relative h-[920px] sm:h-[1000px] flex">
+      <div class="login-container">
+        <div class="content" id="login-container-js">
+          <div>
+            <img src="/logo/logo.png" class="img-content" id="img-content-js" />
+          </div>
+          <div>
+            <h1 class="logscreen-header-text" id="logscreen-header-text-js">
+              Word lid van onze community!
+            </h1>
+          </div>
+          <div>
+            <p class="switch not-active" data-button="1">Log in</p>
+            <p class="switch" data-button="2">Account Maken</p>
+          </div>
+          <div>
+            <input
+              type="text"
+              id="email-js"
+              name="email"
+              placeholder="E-mailadres"
+              autocomplete="on"
+              class="input-content"
+            />
+          </div>
+          <div>
+            <input
+              type="password"
+              id="password-js"
+              name="password"
+              placeholder="Wachtwoord"
+              autocomplete="on"
+              class="input-content"
+            />
+            <span class="toggle-password-button" id="toggle-password"
+              ><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADAklEQVR4nO2X32vPURjHXxgtzLDRkHJnbGHyB1CKC7RdyMUWVtvNihuGCy2FK0tiVsLKd0JJojTyq02KG4VWSlYuFSNcYJu3js7qdHy2nfP13XfK56lTn87neb+f9/mc83me50BqqaWWWmqp/e8mWCLYLmgT3BO8EfQLBu0wz68FdwUnBbWCxRMtepHgoOC5QFmOZ4IDgrJ8Cq8QXLZfVjkaPwQZQfl4Cp8nOCsYShDwTXBb0CLYJFgmmCOYIiiwz2bhWwSH7FH6nsBjPkq7YG6uxdcI3icENMenXlCUBWexoEHQm8D7TrA5F8IL7E/nB3ggWP/XAfgdY5Jgo6AnIc5xs4vZEhfZrXYJTTbZmQvhIyykUfDJi9klmB5LNkvw2CO6lY9sIVgouOPF7hbMDCWYZnO5S3AmZCvtT1tjM8orwVc7zPMFQbVgcuDRPe9pMEliasgCznnAlsCFrxO8DEiZLwRrA4/UYQ/bPhao1gMcCxS/O7IuDAh2BXKf8LDbRnIsE3z0tizk2NR7AT7YXF8lmGFHlZ3r93x3BB4n90gbjvlJjpccpz5TfALIy72CdF9QMop/qfVxC+DSgDglgrcOLuM7rBT8dBxqxiK1uOsO5omgMABTKHjq4K4FxtrqYEw3UOm+vOq8fBhIuMBpK8z5Xx6Cs9gK558ZCk3PXrG74ubdATtpdmF1IFmjW2xCxTt4U6CG8Q2BmDVeA1hmJptjv74la3VwzVkswI3bGoHrdnB7zMSjmKzgEGUcXF0WC6hz8J0RODfr9WAr5XBuLo0ganOImrJYQJODb4vAlTpH/ouZOCL4bKpepID9joCOLBbQ4eD3RWKPGvGxmn2SKq+4FEdgZ3tFbRUTYd5l5FQE7rSD6x1flaMLqfZag72R2UfmmpkftSMLuugJuiFYkeBnqv1NzzczMar/bA38+8NwP9VlR1/Ce3PbG7P1yIuZi4Zte0Na6kF71y3gXzPb43R6bbmbqTIxPdNE70ilYIMdlUHXwdRSSy211FJLLTXyar8AvOYu/BUXraAAAAAASUVORK5CYII="
+                id="toggleimg-js"
+            /></span>
+          </div>
+          <div class="signup-form" id="signup-form-js">
+            <div>
+              <input
+                type="text"
+                id="name-js"
+                name="name"
+                placeholder="Naam"
+                autocomplete="on"
+                class="input-content signup"
+                maxlength="8"
+              />
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="male-js"
+                class="radiobutton signup"
+                name="gender"
+                value="man"
+              />
+              <label for="male-js" class="red signup">Man</label>
+              <input
+                type="radio"
+                id="female-js"
+                class="radiobutton signup"
+                name="gender"
+                value="female"
+              />
+              <label for="female-js" class="red signup">Vrouw</label>
+              <input
+                type="radio"
+                id="anders-js"
+                class="radiobutton signup"
+                name="gender"
+                value="anders"
+              />
+              <label for="anders-js" class="red signup">Anders</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="checkboxTOS-js"
+                name="terms-of-service"
+                value="tos"
+                class="checkbox signup"
+              />
+              <label for="checkboxTOS-js" class="red sm-text signup"
+                >Akkoord</label
+              >
+            </div>
+            <div class="tos-container signup">
+              <p class="tos-description signup">
+                Door op 'Akkoord' te klikken, erkent en aanvaardt u onze
+                Gebruiksvoorwaarden. Dit omvat het naleven van alle
+                toepasselijke wetten, de verantwoordelijkheid voor de
+                vertrouwelijkheid van uw account en het begrip dat de inhoud uw
+                verantwoordelijkheid is. U stemt ook in met ons Privacybeleid en
+                erkent ons recht om diensten te beëindigen of te wijzigen. Lees
+                deze voorwaarden zorgvuldig door; als u het er niet mee eens
+                bent, ga dan niet verder.
+              </p>
+            </div>
+          </div>
+          <div>
+            <button class="button login" id="button-login-js">
+              Verder als nieuwe klant
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/scripts/login.js" type="module"></script>
+  </body>
+</html>
