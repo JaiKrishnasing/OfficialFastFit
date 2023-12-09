@@ -46,7 +46,7 @@ function addItem() {
           &euro; ${storedProduct[i].productPrice.toFixed(2)},-
         </div>
         <div class="item-remove-icon">
-          <img src="/icons/icons8-close-30.png">
+          <img src="../icons/icons8-close-30.png">
         </div>
       </div>
     `;
