@@ -62,7 +62,7 @@ function deleteAccount() {
         localStorage.removeItem("loggedUserName");
         localStorage.removeItem("purchasedItems");
 
-        window.location.href = "/index.html";
+        window.location.href = "../index.html";
 
         break;
       }
