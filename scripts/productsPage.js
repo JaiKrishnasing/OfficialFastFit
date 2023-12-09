@@ -7,7 +7,7 @@ let items = 0;
 let index;
 
 amountOfItems.addEventListener("click", () => {
-  window.location.href = "/pages/checkout.html";
+  window.location.href = "checkout.html";
 });
 
 function setAmountItems() {
