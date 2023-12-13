@@ -130,6 +130,11 @@ function checkOut() {
   }
 
   checkoutButton.addEventListener("click", () => {
+    if(amountOfItems < 1){
+      alert('Uw heeft geen producten in uw winkelmaandtje');
+      return;
+    }
+
     window.location.href = "order.html";
     const purchasedItems = getItems();
     localStorage.setItem("purchasedItems", purchasedItems);
